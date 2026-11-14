@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "games": [
+    {
+      "name": "7th Sea CCG",
+      "aliases": []
+    },
+    {
+      "name": "Akora TCG",
+      "aliases": []
+    },
+    {
+      "name": "Altered",
+      "aliases": [
+        "Altered TCG"
+      ]
+    },
+    {
+      "name": "Avatar: The Last Airbender TCG",
+      "aliases": []
+    },
+    {
+      "name": "Bakugan TCG",
+      "aliases": [
+        "Bakugan"
+      ]
+    },
+    {
+      "name": "Battle Spirits",
+      "aliases": []
+    },
+    {
+      "name": "Battle Spirits Saga",
+      "aliases": []
+    },
+    {
+      "name": "Beyblade TCG",
+      "aliases": []
+    },
+    {
+      "name": "Bleach TCG",
+      "aliases": []
+    },
+    {
+      "name": "Build Divide",
+      "aliases": [
+        "Build Divide TCG"
+      ]
+    },
+    {
+      "name": "Cardcaptor Sakura TCG",
+      "aliases": []
+    },
+    {
+      "name": "Cardfight!! Vanguard",
+      "aliases": [
+        "Cardfight Vanguard",
+        "Vanguard"
+      ]
+    },
+    {
+      "name": "ChaosTCG",
+      "aliases": [
+        "Chaos TCG"
+      ]
+    },
+    {
+      "name": "Chaotic",
+      "aliases": [
+        "Chaotic TCG"
+      ]
+    },
+    {
+      "name": "CookieRun: Braverse",
+      "aliases": [
+        "Cookie Run Braverse"
+      ]
+    },
+    {
+      "name": "Cyberpunk TCG",
+      "aliases": [
+        "Cyberpunk"
+      ]
+    },
+    {
+      "name": "Digimon Card Game",
+      "aliases": [
+        "Digimon"
+      ]
+    },
+    {
+      "name": "Digimon Digi-Battle",
+      "aliases": []
+    },
+    {
+      "name": "Digimon Fusion TCG",
+      "aliases": []
+    },
+    {
+      "name": "Dinosaur King TCG",
+      "aliases": []
+    },
+    {
+      "name": "Disney Lorcana",
+      "aliases": [
+        "Lorcana"
+      ]
+    },
+    {
+      "name": "Draconis 8",
+      "aliases": []
+    },
+    {
+      "name": "Dragon Ball Super Card Game",
+      "aliases": [
+        "Dragon Ball Super Masters",
+        "DBS Masters"
+      ]
+    },
+    {
+      "name": "Dragon Ball Super Card Game Fusion World",
+      "aliases": [
+        "Dragon Ball Fusion World",
+        "Fusion World"
+      ]
+    },
+    {
+      "name": "Dragon Ball Z CCG",
+      "aliases": []
+    },
+    {
+      "name": "Dragon Ball Z TCG",
+      "aliases": []
+    },
+    {
+      "name": "Dreamland",
+      "aliases": [
+        "Dreamland TCG"
+      ]
+    },
+    {
+      "name": "Duel Masters",
+      "aliases": []
+    },
+    {
+      "name": "Elestrals",
+      "aliases": []
+    },
+    {
+      "name": "Fabled-S",
+      "aliases": []
+    },
+    {
+      "name": "Final Fantasy Trading Card Game",
+      "aliases": [
+        "Final Fantasy TCG",
+        "FFTCG"
+      ]
+    },
+    {
+      "name": "Flesh and Blood",
+      "aliases": [
+        "FaB"
+      ]
+    },
+    {
+      "name": "Force of Will",
+      "aliases": []
+    },
+    {
+      "name": "Fullmetal Alchemist TCG",
+      "aliases": []
+    },
+    {
+      "name": "Future Card Buddyfight",
+      "aliases": [
+        "Buddyfight"
+      ]
+    },
+    {
+      "name": "Genesis: Battle of Champions",
+      "aliases": []
+    },
+    {
+      "name": "Godzilla Card Game",
+      "aliases": []
+    },
+    {
+      "name": "Grand Archive",
+      "aliases": [
+        "Grand Archive TCG"
+      ]
+    },
+    {
+      "name": "Gundam Card Game",
+      "aliases": [
+        "Gundam"
+      ]
+    },
+    {
+      "name": "Harry Potter TCG",
+      "aliases": []
+    },
+    {
+      "name": "Hecatomb",
+      "aliases": []
+    },
+    {
+      "name": "Hololive Official Card Game",
+      "aliases": [
+        "Hololive"
+      ]
+    },
+    {
+      "name": "Inuyasha TCG",
+      "aliases": []
+    },
+    {
+      "name": "Kryptik TCG",
+      "aliases": []
+    },
+    {
+      "name": "Legend of the Five Rings CCG",
+      "aliases": [
+        "L5R"
+      ]
+    },
+    {
+      "name": "Lycée Overture",
+      "aliases": [
+        "Lycee Overture"
+      ]
+    },
+    {
+      "name": "Magi-Nation Duel",
+      "aliases": []
+    },
+    {
+      "name": "Magic: The Gathering",
+      "aliases": [
+        "Magic",
+        "MTG"
+      ]
+    },
+    {
+      "name": "Marvel OverPower",
+      "aliases": [
+        "OverPower"
+      ]
+    },
+    {
+      "name": "MegaMan NT Warrior TCG",
+      "aliases": []
+    },
+    {
+      "name": "MetaZoo",
+      "aliases": [
+        "MetaZoo TCG"
+      ]
+    },
+    {
+      "name": "Middle-earth CCG",
+      "aliases": []
+    },
+    {
+      "name": "Monster Collection",
+      "aliases": []
+    },
+    {
+      "name": "My Little Pony CCG",
+      "aliases": []
+    },
+    {
+      "name": "Naruto CCG",
+      "aliases": [
+        "Naruto TCG"
+      ]
+    },
+    {
+      "name": "Naruto Kayou",
+      "aliases": [
+        "Kayou Naruto"
+      ]
+    },
+    {
+      "name": "Naruto Mythos",
+      "aliases": [
+        "Naruto Mythos TCG"
+      ]
+    },
+    {
+      "name": "Neopets Battledome TCG",
+      "aliases": []
+    },
+    {
+      "name": "Neopets TCG",
+      "aliases": []
+    },
+    {
+      "name": "Nostalgix",
+      "aliases": []
+    },
+    {
+      "name": "One Piece Card Game",
+      "aliases": [
+        "One Piece",
+        "One Piece TCG"
+      ]
+    },
+    {
+      "name": "One Piece CCG (2005)",
+      "aliases": []
+    },
+    {
+      "name": "Pokémon",
+      "aliases": [
+        "Pokemon",
+        "Pokémon TCG"
+      ]
+    },
+    {
+      "name": "Precious Memories",
+      "aliases": []
+    },
+    {
+      "name": "Rage CCG",
+      "aliases": []
+    },
+    {
+      "name": "Rebirth for You",
+      "aliases": []
+    },
+    {
+      "name": "Redakai",
+      "aliases": []
+    },
+    {
+      "name": "Riftbound",
+      "aliases": [
+        "Riftbound TCG"
+      ]
+    },
+    {
+      "name": "Sailor Moon CCG",
+      "aliases": []
+    },
+    {
+      "name": "Shadowverse: Evolve",
+      "aliases": [
+        "Shadowverse Evolve"
+      ]
+    },
+    {
+      "name": "Sorcery: Contested Realm",
+      "aliases": [
+        "Sorcery"
+      ]
+    },
+    {
+      "name": "SpongeBob SquarePants TCG",
+      "aliases": []
+    },
+    {
+      "name": "Star Trek CCG",
+      "aliases": []
+    },
+    {
+      "name": "Star Wars CCG",
+      "aliases": []
+    },
+    {
+      "name": "Star Wars: Destiny",
+      "aliases": []
+    },
+    {
+      "name": "Star Wars: Unlimited",
+      "aliases": [
+        "Star Wars Unlimited",
+        "SWU"
+      ]
+    },
+    {
+      "name": "The Lord of the Rings TCG",
+      "aliases": [
+        "LOTR TCG"
+      ]
+    },
+    {
+      "name": "The Simpsons TCG",
+      "aliases": []
+    },
+    {
+      "name": "The Spoils",
+      "aliases": []
+    },
+    {
+      "name": "Transformers TCG",
+      "aliases": []
+    },
+    {
+      "name": "Union Arena",
+      "aliases": [
+        "Union Arena TCG"
+      ]
+    },
+    {
+      "name": "Universus",
+      "aliases": [
+        "UniVersus",
+        "UFS"
+      ]
+    },
+    {
+      "name": "Vampire: The Eternal Struggle",
+      "aliases": [
+        "VTES"
+      ]
+    },
+    {
+      "name": "VS System",
+      "aliases": [
+        "Vs. System"
+      ]
+    },
+    {
+      "name": "Warhammer 40,000 CCG",
+      "aliases": []
+    },
+    {
+      "name": "Warhammer Champions",
+      "aliases": []
+    },
+    {
+      "name": "Warlord: Saga of the Storm",
+      "aliases": []
+    },
+    {
+      "name": "Weiss Schwarz",
+      "aliases": [
+        "Weiß Schwarz"
+      ]
+    },
+    {
+      "name": "Wixoss",
+      "aliases": []
+    },
+    {
+      "name": "World of Warcraft TCG",
+      "aliases": [
+        "WoW TCG"
+      ]
+    },
+    {
+      "name": "Yu-Gi-Oh!",
+      "aliases": [
+        "Yu-Gi-Oh",
+        "Yugioh"
+      ]
+    },
+    {
+      "name": "Z/X",
+      "aliases": [
+        "Zillions of Enemy X"
+      ]
+    }
+  ]
+}
