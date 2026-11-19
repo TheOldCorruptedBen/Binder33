@@ -563,7 +563,7 @@ function organizeSettingsV2(){
  fold(sets,'Acronyme',section('sv-abbr','sv-name'));
  fold(sets,'Renommer',section('sv-name','sv-merge'));
  fold(sets,'Fusionner',section('sv-merge','sv-group-current'));
- const groupNodes=nodes.slice(idx('sv-group-current')-2,idx('sv-lang')-1).filter(n=>n.tagName!=='H3');
+ const groupNodes=nodes.slice(idx('sv-group-current')-1,idx('sv-lang')-1).filter(n=>n.tagName!=='H3');
  const group=fold(sets,'Regrouper les sets',groupNodes);
  fold(sets,'Dates de sortie',section('sv-lang','sv-publisher'));
  fold(sets,'Éditeur associé',section('sv-publisher','sv-aliases'));
