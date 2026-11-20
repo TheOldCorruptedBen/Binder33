@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111111"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon.png"><title>Binder33/ v1.7.46</title><style>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111111"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon.png"><title>Binder33/ v1.7.47</title><style>
 *{box-sizing:border-box}body{margin:0;background:#111;color:#fff;font:16px system-ui,sans-serif}main{max-width:650px;margin:auto;padding:24px 18px 100px}header{font-size:30px;font-weight:900;letter-spacing:-1px;margin-bottom:24px}em{color:#ef4444;font-style:normal}button,input,select,textarea{font:inherit;color:inherit;background:#222;border:1px solid #444;border-radius:9px;padding:11px}button{cursor:pointer}button:disabled{opacity:.35;cursor:default}button.primary{background:#c62828;border-color:#c62828;font-weight:700}input,textarea,select{width:100%}label{display:block;margin:13px 0 5px;color:#bbb;font-size:14px}.row{display:flex;align-items:center;gap:10px;justify-content:space-between}.muted,small{color:#aaa}h2{margin:0 0 14px}article{border-bottom:1px solid #303030;padding:15px 0;cursor:pointer;display:flex;gap:12px;align-items:center;justify-content:space-between}article div:first-child{min-width:0;flex:1}article small{display:block;margin-top:5px;overflow-wrap:anywhere}nav{position:fixed;bottom:0;left:0;right:0;background:#191919;border-top:1px solid #333;display:flex;justify-content:center;padding:10px 4px calc(10px + env(safe-area-inset-bottom));gap:8px}nav button{background:none;border:0;color:#aaa;font-size:13px;flex:1;max-width:200px}nav button.active{color:#ff5252}dialog{background:#191919;color:white;border:1px solid #444;border-radius:14px;width:min(94%,550px);max-height:90vh;overflow:auto;padding:20px}dialog::backdrop{background:#000b}.choices{display:flex;flex-wrap:wrap;gap:5px;margin:5px 0}.choices button{font-size:13px;padding:7px}.bar{height:7px;background:#333;border-radius:6px;margin:5px 0 12px}.bar i{display:block;background:#e53935;height:100%;border-radius:6px}.section{margin:24px 0} .danger{color:#ff7777} .hidden{display:none} #cards article{display:block}
 .collection-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 .collection-heading .card-title{min-width:0;overflow-wrap:anywhere}
@@ -64,9 +64,9 @@ article small.illustrator-credit{display:flex;align-items:center;gap:5px;overflo
 .illustrator-uncredited-option input{width:auto}
 article small.illustrator-uncredited{color:#999;font-style:italic}
 .illustrator-ranking{margin:14px 0 6px}
-</style></head><body><main><header>BINDER<em>33/</em> <span class="app-version">v1.7.46 · L’Ère du Temps</span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Accomplissements</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
+</style></head><body><main><header>BINDER<em>33/</em> <span class="app-version">v1.7.47 · L’Ère du Temps</span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Accomplissements</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
 // Keep the visible release as the source for both numbering schemes.
-const binderRelease = '1.7.46';
+const binderRelease = '1.7.47';
 function binderVersion(awake) {
   if (!awake) return binderRelease;
   const [, minor, patch] = binderRelease.split('.');
@@ -444,7 +444,7 @@ function settingsV2(){
    state.hiddenTcgSeedAliases[tcg]=(state.hiddenTcgSeedAliases[tcg]||[]).filter(a=>norm(a)!==norm(alias));
    save();refresh(tcg);
  };
- refresh();bindSetsV2();organizeSettingsV2();bindRaritiesV2();bindTypesV2();bindLanguagesV2();bindPublishersV2();bindIllustratorsV2();
+ refresh();bindSetsV2();organizeSettingsV2();bindRaritiesV2();bindTypesV2();bindLanguagesV2();bindPublishersV2();bindIllustratorsV2();bindCompanionsV2();
 }
 
 function bindSetsV2(){
@@ -834,6 +834,61 @@ function bindIllustratorsV2(){
  el('iv-merge').onclick=()=>change(true);
  el('iv-alias-add').onclick=()=>{const v=selected(),a=el('iv-alias').value.trim();if(!v||!a)return;if(forbidden(a))return alert('Ce libellé est réservé au statut des cartes sans crédit.');if(existing(a)||aliasExists(a))return alert('Ce nom est déjà utilisé.');referenceAliases('illustrator')[a]=v;save();el('iv-alias').value='';redraw(v)};
  el('iv-delete').onclick=()=>{const v=selected();if(!v)return;const count=state.cards.filter(c=>c.illustrator===v).length;if(count)return alert('Suppression impossible : '+count+' carte(s) utilisent « '+v+' ».\nModifie ou fusionne ces cartes avant de supprimer cet illustrateur.');if(!confirm('Supprimer définitivement l’illustrateur « '+v+' » ?'))return;state.lists.illustrator=options('illustrator').filter(n=>n!==v);if(state.referenceAliases?.illustrator)for(const [a,t] of Object.entries(state.referenceAliases.illustrator))if(a===v||t===v)delete state.referenceAliases.illustrator[a];save();redraw()};
+ redraw();
+}
+
+
+function bindCompanionsV2(){
+ const pane=document.createElement('details');pane.className='settings-accordion';pane.id='companions-v2';
+ pane.innerHTML='<summary>Compagnons</summary><div class="settings-body"><label for="cv-choice">Choisir un compagnon</label><select id="cv-choice"></select><div id="cv-folds"></div></div>';
+ $('#view').append(pane);
+ const choice=pane.querySelector('#cv-choice'),root=pane.querySelector('#cv-folds');
+ const sections=[
+ ['Renommer','<label for="cv-name">Nouveau nom</label><input id="cv-name"><button id="cv-rename">Renommer</button>'],
+ ['Fusionner','<p class="muted">Les cartes, les boosters guidés et les hauts faits seront conservés.</p><label for="cv-target">Compagnon de destination</label><select id="cv-target"></select><button id="cv-merge">Fusionner</button>'],
+ ['Créer un compagnon','<label for="cv-new">Nom du nouveau compagnon</label><input id="cv-new"><button id="cv-create">Créer le compagnon</button>'],
+ ['Supprimer un compagnon','<p class="muted">Suppression bloquée si le compagnon apparaît dans les cartes, le journal ou les hauts faits.</p><button id="cv-delete">Supprimer le compagnon sélectionné</button>']
+ ];
+ for(const [title,html] of sections){const d=document.createElement('details');d.className='settings-accordion settings-subaccordion';const summary=document.createElement('summary');summary.textContent=title;d.append(summary);const body=document.createElement('div');body.className='settings-body';body.innerHTML=html;d.append(body);root.append(d)}
+ const el=id=>pane.querySelector('#'+id),selected=()=>choice.value;
+ const names=()=>ordered([...donorNames(),...(state.companions?.profiles||[]).map(p=>p.name),...(state.companions?.reigns||[]).map(r=>r.name),state.companions?.leader,...(state.journal?.entries||[]).filter(e=>e.kind==='companion-arrival').map(e=>e.name)].filter(Boolean));
+ function redraw(preferred){
+  const list=names(),v=preferred||selected();
+  choice.innerHTML=list.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('');
+  if(list.includes(v))choice.value=v;
+  const current=selected();el('cv-name').value='';
+  el('cv-target').innerHTML='<option value="">Choisir un compagnon</option>'+list.filter(n=>n!==current).map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('');
+ }
+ choice.onchange=()=>redraw();
+ el('cv-create').onclick=()=>{const n=el('cv-new').value.trim();if(!n)return alert('Indique un nom de compagnon.');if(names().some(v=>norm(v)===norm(n)))return alert('Ce compagnon existe déjà.');state.donorNames=ordered([...(state.donorNames||[]),n]);save();redraw(n);el('cv-new').value=''};
+ function change(merge){
+  const old=selected(),target=merge?el('cv-target').value:el('cv-name').value.trim();if(!old||!target||norm(old)===norm(target))return alert('Choisis deux noms différents.');
+  if(merge&&!names().includes(target))return alert('Choisis un compagnon de destination.');
+  if(!merge&&names().some(v=>norm(v)===norm(target)))return alert('Ce nom existe déjà. Utilise Fusionner si nécessaire.');
+  if(!confirm((merge?'Fusionner':'Renommer')+' « '+old+' » vers « '+target+' » ?\nLes cartes, les hauts faits et les événements liés seront mis à jour.'))return;
+  state.cards.forEach(c=>{if(c.donor===old)c.donor=target;if(c.boosterChooser===old)c.boosterChooser=target});
+  for(const e of state.journal?.entries||[]){
+   if(e.kind==='acquisitions')for(const c of e.cards||[]){if(c.donor===old)c.donor=target;if(c.boosterChooser===old)c.boosterChooser=target}
+   if(e.kind==='companion-arrival'&&e.name===old)e.name=target;
+  }
+  companionRename(old,target);
+  state.donorNames=ordered([...(state.donorNames||[]).filter(n=>n!==old),target]);
+  save();render();
+  const p=document.querySelector('#companions-v2');if(p){p.open=true;const c=p.querySelector('#cv-choice');c.value=target;c.dispatchEvent(new Event('change'))}
+ }
+ el('cv-rename').onclick=()=>change(false);
+ el('cv-merge').onclick=()=>change(true);
+ el('cv-delete').onclick=()=>{
+  const v=selected();if(!v)return;
+  const cards=state.cards.filter(c=>c.donor===v||c.boosterChooser===v).length;
+  const journal=(state.journal?.entries||[]).some(e=>(e.kind==='companion-arrival'&&e.name===v)||(e.cards||[]).some(c=>c.donor===v||c.boosterChooser===v));
+  const x=state.companions||{},honors=x.leader===v||(x.reigns||[]).some(r=>r.name===v)||(x.profiles||[]).some(p=>p.name===v&&p.earned?.length);
+  if(cards||journal||honors)return alert('Suppression impossible : ce compagnon possède des contributions ou un historique. Renomme ou fusionne-le.');
+  if(!confirm('Supprimer définitivement « '+v+' » ?'))return;
+  state.donorNames=(state.donorNames||[]).filter(n=>n!==v);
+  if(x.profiles)x.profiles=x.profiles.filter(p=>p.name!==v);
+  save();redraw();
+ };
  redraw();
 }
 
