@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111111"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon.png"><title>Binder33/ v1.7.44</title><style>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111111"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon.png"><title>Binder33/ v1.7.45</title><style>
 *{box-sizing:border-box}body{margin:0;background:#111;color:#fff;font:16px system-ui,sans-serif}main{max-width:650px;margin:auto;padding:24px 18px 100px}header{font-size:30px;font-weight:900;letter-spacing:-1px;margin-bottom:24px}em{color:#ef4444;font-style:normal}button,input,select,textarea{font:inherit;color:inherit;background:#222;border:1px solid #444;border-radius:9px;padding:11px}button{cursor:pointer}button:disabled{opacity:.35;cursor:default}button.primary{background:#c62828;border-color:#c62828;font-weight:700}input,textarea,select{width:100%}label{display:block;margin:13px 0 5px;color:#bbb;font-size:14px}.row{display:flex;align-items:center;gap:10px;justify-content:space-between}.muted,small{color:#aaa}h2{margin:0 0 14px}article{border-bottom:1px solid #303030;padding:15px 0;cursor:pointer;display:flex;gap:12px;align-items:center;justify-content:space-between}article div:first-child{min-width:0;flex:1}article small{display:block;margin-top:5px;overflow-wrap:anywhere}nav{position:fixed;bottom:0;left:0;right:0;background:#191919;border-top:1px solid #333;display:flex;justify-content:center;padding:10px 4px calc(10px + env(safe-area-inset-bottom));gap:8px}nav button{background:none;border:0;color:#aaa;font-size:13px;flex:1;max-width:200px}nav button.active{color:#ff5252}dialog{background:#191919;color:white;border:1px solid #444;border-radius:14px;width:min(94%,550px);max-height:90vh;overflow:auto;padding:20px}dialog::backdrop{background:#000b}.choices{display:flex;flex-wrap:wrap;gap:5px;margin:5px 0}.choices button{font-size:13px;padding:7px}.bar{height:7px;background:#333;border-radius:6px;margin:5px 0 12px}.bar i{display:block;background:#e53935;height:100%;border-radius:6px}.section{margin:24px 0} .danger{color:#ff7777} .hidden{display:none} #cards article{display:block}
 .collection-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 .collection-heading .card-title{min-width:0;overflow-wrap:anywhere}
@@ -64,9 +64,9 @@ article small.illustrator-credit{display:flex;align-items:center;gap:5px;overflo
 .illustrator-uncredited-option input{width:auto}
 article small.illustrator-uncredited{color:#999;font-style:italic}
 .illustrator-ranking{margin:14px 0 6px}
-</style></head><body><main><header>BINDER<em>33/</em> <span class="app-version">v1.7.44 · L’Ère du Temps</span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Accomplissements</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
+</style></head><body><main><header>BINDER<em>33/</em> <span class="app-version">v1.7.45 · L’Ère du Temps</span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Accomplissements</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
 // Keep the visible release as the source for both numbering schemes.
-const binderRelease = '1.7.44';
+const binderRelease = '1.7.45';
 function binderVersion(awake) {
   if (!awake) return binderRelease;
   const [, minor, patch] = binderRelease.split('.');
@@ -444,7 +444,7 @@ function settingsV2(){
    state.hiddenTcgSeedAliases[tcg]=(state.hiddenTcgSeedAliases[tcg]||[]).filter(a=>norm(a)!==norm(alias));
    save();refresh(tcg);
  };
- refresh();bindSetsV2();organizeSettingsV2();bindRaritiesV2();bindTypesV2();bindLanguagesV2();
+ refresh();bindSetsV2();organizeSettingsV2();bindRaritiesV2();bindTypesV2();bindLanguagesV2();bindPublishersV2();
 }
 
 function bindSetsV2(){
@@ -730,6 +730,58 @@ function bindLanguagesV2(){
  el('lv-merge').onclick=()=>change(true);
  el('lv-alias-add').onclick=()=>{const v=selected(),a=el('lv-alias').value.trim();if(!v||!a)return;if(existing(a)||aliasExists(a))return alert('Ce nom est déjà utilisé.');referenceAliases('lang')[a]=v;save();el('lv-alias').value='';redraw(v)};
  el('lv-delete').onclick=()=>{const v=selected();if(!v)return;const count=state.cards.filter(c=>c.lang===v).length;if(count)return alert('Suppression impossible : '+count+' carte(s) utilisent « '+v+' ».\nModifie ou fusionne ces cartes avant de supprimer cette langue.');if(!confirm('Supprimer définitivement la langue « '+v+' » ?'))return;state.lists.lang=options('lang').filter(n=>n!==v);if(state.flags)delete state.flags[v];if(state.referenceAliases?.lang)for(const [a,t] of Object.entries(state.referenceAliases.lang))if(a===v||t===v)delete state.referenceAliases.lang[a];save();redraw()};
+ redraw();
+}
+
+
+function bindPublishersV2(){
+ const pane=document.createElement('details');pane.className='settings-accordion';pane.id='publishers-v2';
+ pane.innerHTML='<summary>Éditeurs</summary><div class="settings-body"><label for="pv-choice">Choisir un éditeur</label><select id="pv-choice"></select><div id="pv-folds"></div></div>';
+ $('#view').append(pane);
+ const choice=pane.querySelector('#pv-choice'),root=pane.querySelector('#pv-folds');
+ const sections=[
+ ['Renommer','<label for="pv-name">Nouveau nom</label><input id="pv-name"><button id="pv-rename">Renommer</button>'],
+ ['Fusionner','<p class="muted">Les cartes et les associations de sets/TCG seront conservées.</p><label for="pv-target">Éditeur de destination</label><select id="pv-target"></select><button id="pv-merge">Fusionner</button>'],
+ ['Créer un éditeur','<label for="pv-new">Nom du nouvel éditeur</label><input id="pv-new"><button id="pv-create">Créer l’éditeur</button>'],
+ ['Alias connus','<div id="pv-aliases"></div><label for="pv-alias">Nouvel alias</label><input id="pv-alias"><button id="pv-alias-add">Ajouter un alias</button>'],
+ ['Associations existantes','<p class="muted">Associations définies pour les TCG et les sets. Pour en ajouter, utilise « Éditeur associé » dans le bloc Sets.</p><div id="pv-rules"></div>'],
+ ['Supprimer un éditeur','<p class="muted">Suppression bloquée si des cartes ou des associations utilisent cet éditeur.</p><button id="pv-delete">Supprimer l’éditeur sélectionné</button>']
+ ];
+ for(const [title,html] of sections){const d=document.createElement('details');d.className='settings-accordion settings-subaccordion';const summary=document.createElement('summary');summary.textContent=title;d.append(summary);const body=document.createElement('div');body.className='settings-body';body.innerHTML=html;d.append(body);root.append(d)}
+ const el=id=>pane.querySelector('#'+id),selected=()=>choice.value;
+ const existing=name=>options('publisher').some(n=>norm(n)===norm(name));
+ const aliasExists=name=>Object.keys(state.referenceAliases?.publisher||{}).some(n=>norm(n)===norm(name));
+ const aliases=v=>Object.keys(state.referenceAliases?.publisher||{}).filter(a=>resolveReference('publisher',a)===v&&norm(a)!==norm(v));
+ function redraw(preferred){
+  const names=options('publisher'),v=preferred||selected();
+  choice.innerHTML=names.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('');
+  if(names.includes(v))choice.value=v;
+  const current=selected();el('pv-name').value='';
+  el('pv-target').innerHTML='<option value="">Choisir un éditeur</option>'+names.filter(n=>n!==current).map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('');
+  el('pv-aliases').innerHTML=aliases(current).map(a=>'<div class="row" style="justify-content:space-between;align-items:center"><span>'+esc(a)+'</span><button type="button" data-pv-remove="'+esc(a)+'">Retirer</button></div>').join('')||'<p class="muted">Aucun alias enregistré.</p>';
+  const rules=(state.publisherRules||[]).filter(r=>r.publisher===current);
+  el('pv-rules').innerHTML=rules.map(r=>'<div class="section">'+esc(r.tcg||'Tous les TCG')+(r.set?' · '+esc(r.set):' · Tous les sets')+'</div>').join('')||'<p class="muted">Aucune association enregistrée.</p>';
+  pane.querySelectorAll('[data-pv-remove]').forEach(b=>b.onclick=()=>{delete referenceAliases('publisher')[b.dataset.pvRemove];save();redraw(current)});
+ }
+ choice.onchange=()=>redraw();
+ el('pv-create').onclick=()=>{const n=el('pv-new').value.trim();if(!n)return alert('Indique un nom d’éditeur.');if(existing(n)||aliasExists(n))return alert('Cet éditeur ou cet alias existe déjà.');state.lists.publisher=ordered([...options('publisher'),n]);save();redraw(n);el('pv-new').value=''};
+ function change(merge){
+  const old=selected(),target=merge?el('pv-target').value:el('pv-name').value.trim();if(!old||!target||norm(old)===norm(target))return alert('Choisis deux noms différents.');
+  if(merge&&!existing(target))return alert('Choisis un éditeur de destination.');
+  if(!merge&&(existing(target)||aliasExists(target)))return alert('Ce nom existe déjà. Utilise Fusionner si nécessaire.');
+  const count=state.cards.filter(c=>c.publisher===old).length,ruleCount=(state.publisherRules||[]).filter(r=>r.publisher===old).length;
+  if(!confirm((merge?'Fusionner':'Renommer')+' « '+old+' » vers « '+target+' » ?\n'+count+' carte(s) et '+ruleCount+' association(s) seront mises à jour.'))return;
+  state.cards.forEach(c=>{if(c.publisher===old)c.publisher=target});
+  renamePublisherRules('publisher',old,target);
+  state.lists.publisher=ordered([...new Set(options('publisher').map(n=>n===old?target:n))]);
+  rememberReference('publisher',old,target);
+  save();render();
+  const p=document.querySelector('#publishers-v2');if(p){p.open=true;const c=p.querySelector('#pv-choice');c.value=target;c.dispatchEvent(new Event('change'))}
+ }
+ el('pv-rename').onclick=()=>change(false);
+ el('pv-merge').onclick=()=>change(true);
+ el('pv-alias-add').onclick=()=>{const v=selected(),a=el('pv-alias').value.trim();if(!v||!a)return;if(existing(a)||aliasExists(a))return alert('Ce nom est déjà utilisé.');referenceAliases('publisher')[a]=v;save();el('pv-alias').value='';redraw(v)};
+ el('pv-delete').onclick=()=>{const v=selected();if(!v)return;const count=state.cards.filter(c=>c.publisher===v).length,ruleCount=(state.publisherRules||[]).filter(r=>r.publisher===v).length;if(count||ruleCount)return alert('Suppression impossible : '+count+' carte(s) et '+ruleCount+' association(s) utilisent « '+v+' ».\nRenomme ou fusionne cet éditeur avant de le supprimer.');if(!confirm('Supprimer définitivement l’éditeur « '+v+' » ?'))return;state.lists.publisher=options('publisher').filter(n=>n!==v);if(state.referenceAliases?.publisher)for(const [a,t] of Object.entries(state.referenceAliases.publisher))if(a===v||t===v)delete state.referenceAliases.publisher[a];save();redraw()};
  redraw();
 }
 
