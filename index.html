@@ -136,10 +136,35 @@ article small.illustrator-uncredited{color:#999;font-style:italic}
   outline:2px solid #fff;
   outline-offset:3px;
 }
+
+.binder-quiz-subject strong,.binder-quiz-subject small,
+.rpg-answers .binder-quiz-card-answer strong,.rpg-answers .binder-quiz-card-answer small {
+  display:block;
+  overflow-wrap:anywhere;
+}
+.binder-quiz-subject small,.rpg-answers .binder-quiz-card-answer small {
+  margin-top:3px;
+  color:#b6cccc;
+}
+.rpg-answers .binder-quiz-card-answer,.rpg-answers .binder-quiz-field-answer {
+  min-height:46px;
+  width:100%;
+  text-align:left;
+}
+.rpg-answers .binder-quiz-field-answer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.binder-quiz-field-answer strong {
+  text-align:right;
+  overflow-wrap:anywhere;
+}
 </style><style id="stats-224-css">[data-stat-fold="rarity"] .stat-rank,[data-stat-fold="rarity"] summary.stat-rank{box-sizing:border-box;display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:10px 4px;border:0;border-bottom:1px solid #333;border-radius:0;background:transparent;color:#fff;font:inherit;text-align:left;position:relative;padding-right:23px;list-style:none}[data-stat-fold="rarity"] summary.stat-rank::-webkit-details-marker{display:none}[data-stat-fold="rarity"] .stat-rank-main{font-size:14px;font-weight:400;color:#fff}[data-stat-fold="rarity"] .stat-rank-count{color:#fff;font-size:16px;font-weight:700;box-sizing:border-box;min-width:36px}[data-stat-fold="rarity"] .stat-rank-arrow{position:absolute;right:3px;width:12px;text-align:center;color:#aaa}[data-stat-fold="rarity"] details[open]>summary.stat-rank .stat-rank-arrow{transform:rotate(180deg)}[data-stat-fold="rarity"] .stat-rank-abbr{color:#fff;min-width:24px;box-sizing:border-box;text-align:center}</style><style id="stats-228-css">.companion-diadem{width:44px;height:44px;margin:0 auto 3px;overflow:visible;filter:drop-shadow(0 0 4px #D4AF3777);animation:diadem-glow 3s ease-in-out infinite}.diadem-spark{animation:diadem-twinkle 3s ease-in-out infinite}.diadem-spark path:nth-child(2){opacity:.65}.diadem-spark path:nth-child(3){opacity:.45}@keyframes diadem-glow{0%,100%{filter:drop-shadow(0 0 3px #D4AF3755)}50%{filter:drop-shadow(0 0 8px #D4AF37bb)}}@keyframes diadem-twinkle{0%,100%{opacity:.35}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.companion-diadem,.diadem-spark{animation:none}}</style><style id="throne-229-css">.throne-card{background:radial-gradient(ellipse at 50% 20%,#30291b,#1b1915 65%);border:1px solid #66552e;text-align:center;padding:23px 16px;color:#e6d5a8}.throne-card h3{font-size:13px;letter-spacing:.27em;color:#d4af37}.throne-card .throne-diadem{width:76px;height:76px;margin:10px auto}.throne-name{display:block;font-size:30px;color:#d4af37}.throne-rank{color:#d4af37;font-size:14px;margin:5px 0}.throne-card em{display:block;font-size:13px;margin:8px 0}.throne-metrics{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #66552e;margin:18px 0 12px;padding-top:14px;gap:8px}.throne-metrics strong{display:block;font-size:23px;color:#d4af37}.throne-card small{display:block;color:#b9ab8b;font-size:12px}.throne-record{border-top:1px solid #66552e;margin-top:16px;padding-top:12px}.throne-record strong{display:block;color:#d4af37;margin-top:5px}</style><style id="vestiges-2210-css">.vestige-fold>summary>span{flex:1;min-width:0}.vestige-total{font-size:23px;color:#fff}.vestige-card-row{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;text-align:left;background:transparent;border:0;border-bottom:1px solid #333;border-radius:0;padding:12px 0}.vestige-card-row>span:first-child{flex:1;min-width:0}.vestige-card-row strong{display:block;font-size:15px;color:#fff}.vestige-card-row small{display:block;color:#aaa;font-size:12px;margin-top:5px;overflow-wrap:anywhere}.vestige-position{flex:none;padding:6px;border:1px solid #444;border-radius:5px;background:#303030;color:#fff;font-size:12px;font-variant-numeric:tabular-nums}</style><style id="time-2212-css">.time-extremes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:9px 0 16px}.time-extreme{display:flex;flex-direction:column;align-items:center;gap:7px;min-width:0;background:#242424;border:0;border-radius:12px;padding:12px 7px;text-align:center;color:#d4af37}.time-extreme.recent{color:#60a5fa}.time-extreme svg{width:32px;height:32px;flex:none}.time-extreme-label{font-size:12px;font-weight:600}.time-extreme>strong{color:#fff;font-size:15px;overflow-wrap:anywhere;max-width:100%}.time-extreme-meta{color:#aaa;font-size:11px;overflow-wrap:anywhere;max-width:100%}.time-extreme-release{display:flex;flex-direction:column;gap:4px;width:100%;border-top:1px solid #444;padding-top:8px;margin-top:auto;color:#fff}.time-extreme-release small{color:#aaa;font-size:11px}.time-extreme-release b{font-size:13px}</style></head><body><main><header>BINDER<em>33/</em> <span class="app-version"></span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Exploits</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
 // Single public version after the System awakening.
-const binderRelease = '2.6.1';
-const binderDevelopmentCount = 247;
+const binderRelease = '2.6.2';
+const binderDevelopmentCount = 248;
 function binderVersion() { return binderRelease; }
 const fields={ref:'Référence',name:'Nom',rarity:'Rareté',type:'Type',tcg:'TCG',publisher:'Éditeur',illustrator:'Illustrateur',set:'Set',lang:'Langue',notes:'Notes'}, keys=['tcg','set','rarity','type','lang','publisher','illustrator'];const optionalCardLists=new Set(['publisher','illustrator']);let state,page='collection',query='',sort='binder',filters={},currentPage=1,pageSize=33;const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])), norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim(), ordered=a=>[...new Set(a)].sort((a,b)=>a.localeCompare(b,'fr',{numeric:true,sensitivity:'base'}));const save=()=>localStorage.setItem('binder33-v1',JSON.stringify(state));function defaultFinish(t){let n=norm(t);return n.includes('reverse')?'#529DFF':n.includes('holo')||n.includes('foil')?'#B56CFF':n.includes('altern')?'#EAB54D':n.includes('promo')?'#F58B45':'#A3A3A3'}function finishColor(t){let v=state.finishColors?.[norm(t)];return typeof v==='string'&&/^#[0-9a-f]{6}$/i.test(v)?v:defaultFinish(t)}function finishBadge(t){return `<span class="finish-badge" style="--finish:${finishColor(t)}">${esc(t)}</span>`}function rarityShort(v){return state.rarityAliases?.[v]||v}function flags(l){return state.flags[l]||({FR:'🇫🇷',EN:'🇬🇧',JP:'🇯🇵',JA:'🇯🇵',KO:'🇰🇷',DE:'🇩🇪',ES:'🇪🇸',IT:'🇮🇹',PT:'🇵🇹',ZH:'🇨🇳',CN:'🇨🇳',US:'🇺🇸'}[String(l).toUpperCase()]||l)}function duplicate(c){return state.cards.find(x=>x.id!==c.id&&['tcg','set','ref','lang','type'].every(k=>norm(x[k])===norm(c[k])))}function options(k){return ordered(state.lists[k]||[])}
 function setFamilyFor(tcg,set){return (state.setFamilies||[]).find(f=>norm(f.tcg)===norm(tcg)&&f.members.some(n=>norm(n)===norm(set)))}
@@ -1700,19 +1725,22 @@ function questMatches(request, card) {
 function questSpecialQuestions() {
   const cards=questShuffle(state.cards.filter(card=>!card.vestige)).filter((card,index,all)=>all.findIndex(other=>questCardLabel(other)===questCardLabel(card))===index);
   const questions=[];
+  const intruderCards=quizUniqueCards(state.cards);
   for(const field of ['tcg','publisher','lang','year']) {
     const groups=new Map();
-    for(const card of cards.filter(card=>card[field])) {
+    for(const card of intruderCards.filter(card=>card[field])) {
       const key=norm(card[field]);
       if(!groups.has(key)) groups.set(key,[]);
       groups.get(key).push(card);
     }
-    const group=[...groups.values()].find(group=>group.length>=3);
-    const intruder=group && cards.find(card=>card[field] && norm(card[field])!==norm(group[0][field]));
+    const group=[...groups.values()].find(group=>group.length>=2);
+    const intruder=group && intruderCards.find(card=>card[field] && norm(card[field])!==norm(group[0][field]));
     if(intruder) {
-      const answer=questCardLabel(intruder);
-      const subject={tcg:'TCG',publisher:'éditeur',lang:'langue',year:'année de sortie'}[field];
-      questions.push({text:'Quelle carte est l’intruse si vous comparez leur '+subject+' ?',answer,options:questShuffle([...group.slice(0,3).map(questCardLabel),answer])});
+      const choices=[...group.slice(0,2),intruder];
+      const answer=quizCardIdentifier(intruder);
+      const subject={tcg:'le TCG',publisher:'l’éditeur',lang:'la langue',year:'l’année de sortie'}[field];
+      const cardsByOption=Object.fromEntries(choices.map(card=>[quizCardIdentifier(card),{name:card.name,ref:card.ref}]));
+      questions.push({text:'Quelle carte est l’intruse si vous comparez '+subject+' ?',answer,options:choices.map(quizCardIdentifier),presentation:{cardsByOption}});
     }
   }
   const dated=[...new Map(cards.filter(c=>Number(c.year)>0).map(c=>[String(c.year),c])).values()].slice(0,3);
@@ -1739,16 +1767,57 @@ function questSpecialQuestions() {
   }
   return questions;
 }
+function quizCardIdentifier(card) {
+  return [card.name,card.ref].join(' · ');
+}
+
+function quizUniqueCards(cards) {
+  const identities=new Map();
+  for(const card of cards) {
+    if(!norm(card.name)||!norm(card.ref)) continue;
+    const key=norm(quizCardIdentifier(card));
+    identities.set(key,identities.has(key)?null:card);
+  }
+  return questShuffle([...identities.values()].filter(card=>card&&!card.vestige));
+}
+
+function quizPrompt(question) {
+  return esc(question.presentation?.prompt||question.text);
+}
+
+function quizSubject(question) {
+  const card=question.presentation?.card;
+  return card?'<p class="binder-quiz-subject"><strong>'+esc(card.name)+'</strong><small>'+esc(card.ref)+'</small></p>':'';
+}
+
+function quizAnswerButtons(question, attribute, prefix='') {
+  const {cardsByOption,fields}=question.presentation||{};
+  return '<div class="rpg-answers">'+question.options.map((option,i)=>{
+    const card=cardsByOption?.[option];
+    const value=fields?.[option];
+    const label=card?'<strong>'+esc(card.name)+'</strong><small>'+esc(card.ref)+'</small>':
+      value!==undefined?'<span>'+esc(option)+'</span><strong>'+esc(value)+'</strong>':esc(option);
+    const className=card?' class="binder-quiz-card-answer"':value!==undefined?' class="binder-quiz-field-answer"':'';
+    return '<button type="button"'+className+' '+attribute+'="'+esc(prefix+i)+'">'+label+'</button>';
+  }).join('')+'</div>';
+}
+
+function quizCorrectAnswer(question) {
+  const value=question.presentation?.correctValue;
+  return value===undefined?question.answer:question.answer+' · '+value;
+}
+
 const binderQuizThreshold = {daily:12, weekly:15, monthly:20};
 
 function binderQuizBank() {
   const bank = new Map(), conflicts = new Set();
-  const add = (text, answer, alternatives, difficulty=1) => {
+  const add = (text, answer, alternatives, difficulty=1, presentation) => {
     answer = String(answer);
-    if(conflicts.has(text)) return;
-    if(bank.has(text) && norm(bank.get(text).answer)!==norm(answer)) {
-      bank.delete(text);
-      conflicts.add(text);
+    const key=text;
+    if(conflicts.has(key)) return;
+    if(bank.has(key) && norm(bank.get(key).answer)!==norm(answer)) {
+      bank.delete(key);
+      conflicts.add(key);
       return;
     }
     const distinct = new Map();
@@ -1756,7 +1825,7 @@ function binderQuizBank() {
       if(option && norm(option)!==norm(answer)) distinct.set(norm(option),option);
     }
     if(distinct.size<2) return;
-    bank.set(text,{text,answer,options:questShuffle([answer,...[...distinct.values()].slice(0,2)]),difficulty});
+    bank.set(key,{text,answer,options:questShuffle([answer,...[...distinct.values()].slice(0,2)]),difficulty,...(presentation?{presentation}:{})});
   };
   const eligible = state.cards.filter(card=>!card.vestige);
   const byLabel = new Map();
@@ -1781,7 +1850,7 @@ function binderQuizBank() {
     }
   }
   for(const question of [...questSpecialQuestions(),...rpgKnowledgeQuestions]) {
-    add(question.text,question.answer,questShuffle(question.options),2);
+    add(question.text,question.answer,questShuffle(question.options),2,question.presentation);
   }
 
   const facts = [
@@ -1841,6 +1910,7 @@ function binderQuizBank() {
   }
   chronology(cards.filter(card=>acquired.has(String(card.id))).map(card=>({label:questCardLabel(card),order:acquired.get(String(card.id))})), 'Dans quel ordre ces cartes ont-elles été ajoutées au Binder');
 
+  const uniqueCards=new Set(quizUniqueCards(state.cards));
   for(const card of cards.slice(0,32)) {
     const clues=[['lang','langue'],['rarity','rareté'],['year','année']].filter(([key])=>card[key]);
     if(clues.length===3) {
@@ -1849,15 +1919,13 @@ function binderQuizBank() {
       add('Quelle carte correspond à ces indices ? '+clues.map(([key,label])=>label+' '+card[key]).join(' · '),questCardLabel(card),wrong.map(questCardLabel),2);
     }
     const details=[['lang','Langue'],['rarity','Rareté'],['type','Type']];
-    if(details.every(([key])=>card[key])) {
+    if(uniqueCards.has(card) && details.every(([key])=>card[key])) {
       const modified=questShuffle(details).find(([key])=>cards.some(other=>other[key]&&norm(other[key])!==norm(card[key])));
       if(modified) {
         const [field,answer]=modified;
         const wrong=cards.find(other=>other[field]&&norm(other[field])!==norm(card[field]))[field];
-        const label=[card.name,card.ref,card.set,card.tcg].filter(Boolean).join(' · ');
-        if(cards.filter(other=>[other.name,other.ref,other.set,other.tcg].filter(Boolean).join(' · ')===label).length===1) {
-          add('Quel champ est incorrect pour '+label+' ? '+details.map(([key,name])=>name+' '+(key===field?wrong:card[key])).join(' · '),answer,details.map(([,name])=>name),3);
-        }
+        const fields=Object.fromEntries(details.map(([key,name])=>[name,key===field?wrong:card[key]]));
+        add('Quel champ est incorrect pour '+quizCardIdentifier(card)+' ?',answer,Object.keys(fields),3,{prompt:'Touchez le champ incorrect',card:{name:card.name,ref:card.ref},fields,correctValue:card[field]});
       }
     }
   }
@@ -1936,7 +2004,7 @@ function openBinderQuiz() {
   function finish(question) {
     show('<h3>'+ (question?'Partie terminée':'Sans-faute !')+'</h3><p>Score '+score+' · Record '+previousRecord()+'</p>'+
       (score>record?'<p>Nouveau record !</p>':'')+
-      (question?'<p>Bonne réponse · '+esc(question.answer)+'</p>':'')+
+      (question?'<p>Bonne réponse · '+esc(quizCorrectAnswer(question))+'</p>':'')+
       '<button class="primary" data-quiz-start>Rejouer</button>');
     dialog.querySelector('[data-quiz-start]').onclick=start;
   }
@@ -1945,8 +2013,8 @@ function openBinderQuiz() {
     const stage=score<5?1:score<12?2:3;
     const index=questions.findIndex(question=>question.difficulty===stage);
     const [question]=questions.splice(index<0?0:index,1);
-    show('<p>Score '+score+' · Record '+previousRecord()+'</p><h3>'+esc(question.text)+'</h3><div class="rpg-answers">'+
-      question.options.map((option,i)=>'<button data-quiz-option="'+i+'">'+esc(option)+'</button>').join('')+'</div>');
+    show('<p>Score '+score+' · Record '+previousRecord()+'</p>'+quizSubject(question)+'<h3>'+quizPrompt(question)+'</h3>'+
+      quizAnswerButtons(question,'data-quiz-option'));
     dialog.querySelectorAll('[data-quiz-option]').forEach(button=>button.onclick=()=>{
       if(question.options[Number(button.dataset.quizOption)]!==question.answer) return finish(question);
       score++;
@@ -2202,7 +2270,7 @@ function questCyclePanel(quest,label) {
     if(active && task.kind==='endlessQuiz') controls='<button class="primary" data-binder-quiz>Lancer le quiz</button>';
     if(active && task.kind==='quiz') {
       const q=task.questions[task.progress];
-      controls='<p>'+esc(q.text)+'</p><div class="rpg-answers">'+q.options.map((option,n)=>'<button data-quest-answer="'+token+':'+n+'">'+esc(option)+'</button>').join('')+'</div>';
+      controls=quizSubject(q)+'<p>'+quizPrompt(q)+'</p>'+quizAnswerButtons(q,'data-quest-answer',token+':');
     }
     return '<div class="rpg-quest-objective"><div><p>'+prefix+esc(questTaskText(task))+' <small>'+Math.min(task.progress,task.target)+' / '+task.target+'</small></p>'+controls+'</div></div>';
   }).join('');
@@ -2399,7 +2467,7 @@ function rpgUrgentPrompt(){
   if(u.status==='pending'){
     d.innerHTML='<small>⟐ ANOMALIE CRITIQUE</small><h2>QUÊTE URGENTE</h2><p>Le Système exige une décision. Acceptez-vous une épreuve sans droit à l’erreur ?</p><div class="row"><button id="urgent-accept" class="primary">Accepter</button><button id="urgent-refuse">Refuser</button></div>';
   }else if(u.status==='quiz'){
-    const q=u.questions?.[u.index];if(!q){u.status='unavailable';save();return}d.innerHTML=`<small>⟐ ÉPREUVE IRRÉVOCABLE</small><h2>Question ${u.index+1} / ${u.questions.length}</h2><p>${esc(q.text)}</p><div class="rpg-answers">${q.options.map((answer,i)=>`<button data-urgent-answer="${i}">${esc(answer)}</button>`).join('')}</div>`;
+    const q=u.questions?.[u.index];if(!q){u.status='unavailable';save();return}d.innerHTML=`<small>⟐ ÉPREUVE IRRÉVOCABLE</small><h2>Question ${u.index+1} / ${u.questions.length}</h2>${quizSubject(q)}<p>${quizPrompt(q)}</p>${quizAnswerButtons(q,'data-urgent-answer')}`;
   }else{
     const won=u.status==='passed';d.innerHTML=`<small>⟐ VERDICT DU SYSTÈME</small><h2>${won?'ÉPREUVE RÉUSSIE':'ÉCHEC D’ÉPREUVE'}</h2><p>${won?'Les archives reconnaissent votre maîtrise. Aucune récompense en XP.':'Une réponse erronée a interrompu définitivement cette épreuve. Une restriction temporaire a été appliquée.'}</p><button id="urgent-result">Continuer</button>`;
   }
@@ -2452,7 +2520,7 @@ function rpgVoluntaryStart(){const r=state.rpg,m=rpgMetrics();if(m.level<33||!r.
 function rpgVoluntaryAnswer(index){const r=state.rpg;if(rpgMetrics().level<33||!r.className||r.className==='Joueur')return;const v=r.voluntaryClass;if(!v||v.status!=='active')return;const q=v.qs[v.index];if(!q)return;if(q.options[index]!==q.answer)v.errors++;v.index++;if(v.errors>v.maxErrors){v.status='failed';v.cooldownUntil=Date.now()+24*60*60*1000;rpgNotice('Épreuve échouée','Nouvelle tentative dans 24 heures.')}else if(v.index>=v.qs.length){v.status='passed';v.passedAt=new Date().toISOString();v.cooldownUntil=Date.now()+24*60*60*1000;rpgNotice('Épreuve réussie','Vous pouvez choisir une voie accessible.')}save();render()}
 function rpgVoluntaryChoose(name){const r=state.rpg;if(rpgMetrics().level<33||!r.className||r.className==='Joueur')return;const v=r.voluntaryClass;if(v?.status!=='passed')return;const m=rpgMetrics(),i=rpgCharacteristics.findIndex(x=>x.className===name);if(i<1||rpgClassRank(m.stats[i])<1||!(r.classRanks?.[name]>0))return;r.className=name;r.classRanks??={};r.classRanks[name]=Math.max(1,r.classRanks[name]||0);r.history??=[];r.history.push({name,type:'voluntary',rank:r.classRanks[name],at:new Date().toISOString(),level:m.level});v.status='completed';save();rpgNotice('Nouvelle voie',name);render()}
 function rpgExceptionalReset(){const r=state.rpg;if(!r||r.exceptionalReset20261121||rpgPeriod('daily')!=='2026-11-21')return;if(!confirm('Requête unique au Système : réinitialiser les trois quêtes contre 100 XP ? Les récompenses et les progrès passés restent conservés.'))return;r.bonus=(r.bonus||0)-100;r.exceptionalReset20261121={at:new Date().toISOString(),cost:100};r.questArchive??=[];for(const k of ['daily','weekly','monthly']){const q=r.quests?.[k];if(q){r.questArchive.push({type:k,quest:structuredClone(q),archivedAt:new Date().toISOString(),exceptional:true});}}r.quests={...(r.quests||{})};delete r.quests.daily;delete r.quests.weekly;delete r.quests.monthly;for(const k of ['daily','weekly','monthly'])rpgQuest(k);save();rpgNotice('Requête accordée','Les trois quêtes renaissent. Tribut prélevé : 100 XP. Cette faveur ne sera pas renouvelée.');render()}
-function renderPlayer(){let r=state.rpg,m=rpgMetrics(),cq=rpgClass(m),title=collectorTitles[state.collectorTitle]||'';let fresh=cq?state.cards.filter(c=>!new Set(cq.ids.map(String)).has(String(c.id))).length:0;let html=`<section class="rpg-hero"><small>⟐ STATUT DU JOUEUR</small><h2>The Old Ben</h2>${title?`<div class="rpg-player-title">[ ${esc(title)} ]</div>`:""}<p>${esc(r.className||'Joueur')}${(r.classRanks?.[r.className]||0)>0?' · Strate '+(['','I','II','III','IV','V'][Math.min(5,r.classRanks[r.className])]):''} · Niveau ${m.level} · Rang ${m.rank}</p>${r.expeditionTitles?.length?`<small>⟐ ${esc(r.expeditionTitles[r.expeditionTitles.length-1])}</small>`:''}<div class="rpg-progress"><i style="width:${100*(m.xp-m.low)/(m.high-m.low)}%"></i></div><small>${m.xp} / ${m.high} XP</small></section><section class="rpg-panel rpg-characteristics"><h3>Caractéristiques</h3><div class="rpg-stat-grid">${rpgCharacteristics.map(({name:n},i)=>`<div class="rpg-stat"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${rpgStatIcons[n]||''}</svg><div class="rpg-stat-text"><span>${n}</span><strong>${m.stats[i]}</strong></div></div>`).join('')}</div></section>`;if(cq)html+=`<section class="rpg-panel"><small>ÉPREUVE DE CLASSE</small><h3>${cq.type==='rank'?'Jugement de strate':cq.type==='dual'?'Jugement des deux voies':'Jugement de classe'} · Niveau ${cq.judgmentLevel||'?'}</h3><p>Ajoutez ${cq.need} nouvelles cartes à votre Expédition, quelle que soit leur origine.</p><small>${esc(cq.target)} · ${cq.rank?'Strate '+['','I','II','III','IV','V'][cq.rank]:'Strate non accessible'}</small>${cq.tiedCandidates?.length>2?`<p class="muted">Égalité entre ${cq.tiedCandidates.length} voies. Deux sont retenues pour ce Jugement ; les autres restent éligibles aux suivants.</p>`:''}<p>${Math.min(fresh,cq.need)} / ${cq.need}</p><button id="rpg-class" ${fresh<cq.need||cq.rank<=0?'disabled':''}>Accepter la révélation</button></section>`;const vc=r.voluntaryClass;if(m.level>=33&&r.className&&r.className!=='Joueur')html+=`<section class="rpg-panel"><small>VOIE VOLONTAIRE</small><h3>Épreuve de réorientation</h3>${vc?.status==='active'?`<p>${esc(vc.qs[vc.index].text)}</p><small>Question ${vc.index+1}/${vc.qs.length} · Erreurs ${vc.errors}/${vc.maxErrors}</small><div class="rpg-answers">${vc.qs[vc.index].options.map((o,i)=>`<button data-vclass-answer="${i}">${esc(o)}</button>`).join('')}</div>`:vc?.status==='passed'?`<p>Choisissez une classe accessible :</p><div class="rpg-answers">${rpgCharacteristics.slice(1).filter((x,i)=>rpgClassRank(m.stats[i+1])>0&&(r.classRanks?.[x.className]||0)>0).map(x=>`<button data-vclass-choose="${esc(x.className)}">${esc(x.className)}</button>`).join('')}</div>`:Date.now()<(vc?.cooldownUntil||0)?`<p>Nouvelle tentative possible après ${new Date(vc.cooldownUntil).toLocaleString('fr-FR')}.</p>`:`<p>Une épreuve de connaissances permet de choisir une autre classe, sans XP supplémentaire.</p><button id="rpg-voluntary-start">Commencer l’épreuve</button>`}</section>`;if(rpgPeriod('daily')==='2026-11-21'&&!r.exceptionalReset20261121)html+=`<section class="rpg-panel"><small>⟐ REQUÊTE EXCEPTIONNELLE</small><h3>La Faveur du Système</h3><p>Une seule fois : recommencer les trois quêtes contre 100 XP. Votre collection, vos titres et vos récompenses déjà obtenues sont conservés.</p><button id="rpg-exceptional-reset">Offrir 100 XP</button></section>`;for(const [k,label] of [['daily','Journalière'],['weekly','Hebdomadaire'],['monthly','Mensuelle']]){let q=rpgQuest(k);if(!q)continue;if(q.kind==='cycle'){html+=questCyclePanel(q,label);continue}if(k==='weekly'&&q.kind==='objectives')rpgWeeklySync();if(k==='monthly'&&q.kind==='expedition')rpgMonthlySync(null);let x=q.qs[q.index];html+=`<section class="rpg-panel${q.done?' rpg-quest-complete':''}"><small>QUÊTE ${label.toUpperCase()}</small><h3>${k==='daily'?esc(q.title||'Exploration quotidienne'):k==='weekly'&&q.kind==='objectives'?'Les repères de la semaine':q.kind==='expedition'?esc(q.title):'Les échos des archives'}</h3>${q.done?`<p>✓ Quête accomplie${k==='daily'||['objectives','expedition'].includes(q.kind)?'':' · '+q.correct+'/'+q.qs.length+' réponses'}</p>`:k==='daily'?`<p>${esc(q.text)}</p><small class="rpg-quest-progress">${q.visited?.length||0} / ${(q.targets||[q.target]).length} sections explorées. ${q.targets?.length>1?'Explorez également '+({collection:'la collection',stats:'les statistiques',journal:'le Journal'})[q.targets[1]]+'.':''}</small><div class="rpg-quest-reward">Récompense : <strong>+15 XP</strong></div>`:k==='weekly'&&q.kind==='objectives'?`<div class="rpg-quest-objectives">${q.objectives.map(o=>`<div class="rpg-quest-objective"><span class="rpg-check">${o.done?'✓':'○'}</span><span>${esc(o.title)}${['cards','diversity','daily','calls','callStreak','callCards'].includes(o.kind)?' ['+Math.min(o.kind==='daily'?rpgWeeklyDailyCount(q):o.progress||0,o.target)+'/'+o.target+']':''}</span></div>`).join('')}</div><small class="rpg-quest-progress">${q.correct}/${q.objectives.length} objectifs</small><div class="rpg-quest-reward">Récompense : <strong>+90 XP</strong></div>${q.objectives.some(o=>o.kind==='quiz'&&!o.done)?(q.weeklyQuestion?`<p>${esc(q.weeklyQuestion.text)}</p><div class="rpg-answers">${q.weeklyQuestion.options.map((a,i)=>`<button data-weekly-answer="${i}">${esc(a)}</button>`).join('')}</div>`:`<button id="rpg-weekly-quiz">Interroger les archives</button>`):''}`:q.kind==='expedition'?`<p>Étape ${q.index+1} / ${q.steps.length} : ${esc(q.steps[q.index].title)}${['daily','cards','calls','callStreak'].includes(q.steps[q.index].kind)?' ['+Math.min(q.steps[q.index].progress||0,q.steps[q.index].target)+'/'+q.steps[q.index].target+']':''}</p><div class="rpg-quest-reward">Récompense : <strong>+50 XP</strong> par étape<span class="rpg-reward-line"><strong>+150 XP</strong> à la finale</span></div>`:`<p>${esc(x.text)}</p><small class="rpg-quest-progress">${q.index+1} / ${q.qs.length}</small><div class="rpg-quest-reward">Récompense : <strong>+${k==='daily'?15:k==='weekly'?90:150} XP</strong></div><div class="rpg-answers">${x.options.map((a,i)=>`<button data-rpg-q="${k}" data-rpg-a="${i}">${esc(a)}</button>`).join('')}</div>`}</section>`}html+=systemCallPanel()+binderQuizPlayerPanel();$('#view').innerHTML=html;questBindPlayer();save();document.querySelectorAll('[data-rpg-q]').forEach(b=>b.onclick=()=>{let q=r.quests[b.dataset.rpgQ],x=q.qs[q.index];let ok=x.options[Number(b.dataset.rpgA)]===x.answer;if(ok)q.correct++;q.index++;q.done=q.index>=q.qs.length;let earned=0;if(b.dataset.rpgQ==='monthly'&&ok){earned=50;r.bonus+=earned;q.stepRewards=(q.stepRewards||0)+1}if(q.done&&q.correct===q.qs.length&&!q.rewarded){const completion=({daily:15,weekly:90,monthly:150}[b.dataset.rpgQ]);earned+=completion;r.bonus+=completion;q.rewarded=true;if(b.dataset.rpgQ==='daily'){const today=q.period,prev=r.dailyStreak?.lastDay;const previous=new Date(today+'T12:00:00');previous.setDate(previous.getDate()-1);const yesterday=[previous.getFullYear(),String(previous.getMonth()+1).padStart(2,'0'),String(previous.getDate()).padStart(2,'0')].join('-');const current=prev===yesterday?(r.dailyStreak?.current||0)+1:1;r.dailyStreak={lastDay:today,current,best:Math.max(current,r.dailyStreak?.best||0)}}}save();rpgNotice(q.done&&q.rewarded?'Quête accomplie':earned?'Étape accomplie':ok?'Réponse correcte':'Les archives répondent',earned?'+'+earned+' XP':ok?'Bonne réponse. La quête continue.':'Réponse : '+x.answer);render()});if($('#rpg-weekly-quiz'))$('#rpg-weekly-quiz').onclick=()=>{const q=r.quests.weekly;if(!q||q.done||q.period!==rpgPeriod('weekly'))return;q.weeklyQuestion=rpgQuestion('weekly')||rpgQuestion('urgent');if(!q.weeklyQuestion){rpgNotice('Archives indisponibles','Aucune question disponible pour le moment.');return}save();render()};document.querySelectorAll('[data-weekly-answer]').forEach(b=>b.onclick=()=>{const q=r.quests.weekly,x=q?.weeklyQuestion;if(!x||q.period!==rpgPeriod('weekly')||q.done)return;const correct=x.options[Number(b.dataset.weeklyAnswer)]===x.answer;if(correct){const objective=q.objectives.find(o=>o.kind==='quiz');if(objective)objective.done=true;delete q.weeklyQuestion;rpgWeeklySync();rpgNotice('Les archives ont parlé','Bonne réponse. Objectif validé.')}else{delete q.weeklyQuestion;rpgNotice('Réponse incorrecte','La bonne réponse était : '+x.answer+'. Vous pourrez réessayer.')}save();render()});if($('#rpg-exceptional-reset'))$('#rpg-exceptional-reset').onclick=rpgExceptionalReset;if($('#rpg-voluntary-start'))$('#rpg-voluntary-start').onclick=rpgVoluntaryStart;document.querySelectorAll('[data-vclass-answer]').forEach(b=>b.onclick=()=>rpgVoluntaryAnswer(Number(b.dataset.vclassAnswer)));document.querySelectorAll('[data-vclass-choose]').forEach(b=>b.onclick=()=>rpgVoluntaryChoose(b.dataset.vclassChoose));if($('#rpg-class'))$('#rpg-class').onclick=()=>{if(cq.rank<=0){rpgNotice('Jugement différé','Les caractéristiques doivent atteindre le niveau 5 pour accéder au première strate.');return}if(cq.rank>0){r.className=cq.target;r.classRanks??={};r.classRanks[cq.target]=Math.max(r.classRanks[cq.target]||0,cq.rank)}r.classProgress=m.classProgress;r.history.push({name:cq.target,type:cq.type||'class',rank:cq.rank||0,at:new Date().toISOString(),level:cq.judgmentLevel||m.level});if(r.classJudgments?.pending?.[0]===cq.judgmentLevel)r.classJudgments.pending.shift();delete r.classQuest;save();rpgNotice(cq.type==='rank'?'Jugement de strate':cq.type==='dual'?'Jugement des deux voies':'Éveil de classe',cq.rank?cq.target+' · Rang '+['','I','II','III','IV','V'][cq.rank]:'Jugement enregistré. Strate inaccessible pour le moment.');render()};}
+function renderPlayer(){let r=state.rpg,m=rpgMetrics(),cq=rpgClass(m),title=collectorTitles[state.collectorTitle]||'';let fresh=cq?state.cards.filter(c=>!new Set(cq.ids.map(String)).has(String(c.id))).length:0;let html=`<section class="rpg-hero"><small>⟐ STATUT DU JOUEUR</small><h2>The Old Ben</h2>${title?`<div class="rpg-player-title">[ ${esc(title)} ]</div>`:""}<p>${esc(r.className||'Joueur')}${(r.classRanks?.[r.className]||0)>0?' · Strate '+(['','I','II','III','IV','V'][Math.min(5,r.classRanks[r.className])]):''} · Niveau ${m.level} · Rang ${m.rank}</p>${r.expeditionTitles?.length?`<small>⟐ ${esc(r.expeditionTitles[r.expeditionTitles.length-1])}</small>`:''}<div class="rpg-progress"><i style="width:${100*(m.xp-m.low)/(m.high-m.low)}%"></i></div><small>${m.xp} / ${m.high} XP</small></section><section class="rpg-panel rpg-characteristics"><h3>Caractéristiques</h3><div class="rpg-stat-grid">${rpgCharacteristics.map(({name:n},i)=>`<div class="rpg-stat"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${rpgStatIcons[n]||''}</svg><div class="rpg-stat-text"><span>${n}</span><strong>${m.stats[i]}</strong></div></div>`).join('')}</div></section>`;if(cq)html+=`<section class="rpg-panel"><small>ÉPREUVE DE CLASSE</small><h3>${cq.type==='rank'?'Jugement de strate':cq.type==='dual'?'Jugement des deux voies':'Jugement de classe'} · Niveau ${cq.judgmentLevel||'?'}</h3><p>Ajoutez ${cq.need} nouvelles cartes à votre Expédition, quelle que soit leur origine.</p><small>${esc(cq.target)} · ${cq.rank?'Strate '+['','I','II','III','IV','V'][cq.rank]:'Strate non accessible'}</small>${cq.tiedCandidates?.length>2?`<p class="muted">Égalité entre ${cq.tiedCandidates.length} voies. Deux sont retenues pour ce Jugement ; les autres restent éligibles aux suivants.</p>`:''}<p>${Math.min(fresh,cq.need)} / ${cq.need}</p><button id="rpg-class" ${fresh<cq.need||cq.rank<=0?'disabled':''}>Accepter la révélation</button></section>`;const vc=r.voluntaryClass;if(m.level>=33&&r.className&&r.className!=='Joueur')html+=`<section class="rpg-panel"><small>VOIE VOLONTAIRE</small><h3>Épreuve de réorientation</h3>${vc?.status==='active'?`${quizSubject(vc.qs[vc.index])}<p>${quizPrompt(vc.qs[vc.index])}</p><small>Question ${vc.index+1}/${vc.qs.length} · Erreurs ${vc.errors}/${vc.maxErrors}</small>${quizAnswerButtons(vc.qs[vc.index],'data-vclass-answer')}`:vc?.status==='passed'?`<p>Choisissez une classe accessible :</p><div class="rpg-answers">${rpgCharacteristics.slice(1).filter((x,i)=>rpgClassRank(m.stats[i+1])>0&&(r.classRanks?.[x.className]||0)>0).map(x=>`<button data-vclass-choose="${esc(x.className)}">${esc(x.className)}</button>`).join('')}</div>`:Date.now()<(vc?.cooldownUntil||0)?`<p>Nouvelle tentative possible après ${new Date(vc.cooldownUntil).toLocaleString('fr-FR')}.</p>`:`<p>Une épreuve de connaissances permet de choisir une autre classe, sans XP supplémentaire.</p><button id="rpg-voluntary-start">Commencer l’épreuve</button>`}</section>`;if(rpgPeriod('daily')==='2026-11-21'&&!r.exceptionalReset20261121)html+=`<section class="rpg-panel"><small>⟐ REQUÊTE EXCEPTIONNELLE</small><h3>La Faveur du Système</h3><p>Une seule fois : recommencer les trois quêtes contre 100 XP. Votre collection, vos titres et vos récompenses déjà obtenues sont conservés.</p><button id="rpg-exceptional-reset">Offrir 100 XP</button></section>`;for(const [k,label] of [['daily','Journalière'],['weekly','Hebdomadaire'],['monthly','Mensuelle']]){let q=rpgQuest(k);if(!q)continue;if(q.kind==='cycle'){html+=questCyclePanel(q,label);continue}if(k==='weekly'&&q.kind==='objectives')rpgWeeklySync();if(k==='monthly'&&q.kind==='expedition')rpgMonthlySync(null);let x=q.qs[q.index];html+=`<section class="rpg-panel${q.done?' rpg-quest-complete':''}"><small>QUÊTE ${label.toUpperCase()}</small><h3>${k==='daily'?esc(q.title||'Exploration quotidienne'):k==='weekly'&&q.kind==='objectives'?'Les repères de la semaine':q.kind==='expedition'?esc(q.title):'Les échos des archives'}</h3>${q.done?`<p>✓ Quête accomplie${k==='daily'||['objectives','expedition'].includes(q.kind)?'':' · '+q.correct+'/'+q.qs.length+' réponses'}</p>`:k==='daily'?`<p>${esc(q.text)}</p><small class="rpg-quest-progress">${q.visited?.length||0} / ${(q.targets||[q.target]).length} sections explorées. ${q.targets?.length>1?'Explorez également '+({collection:'la collection',stats:'les statistiques',journal:'le Journal'})[q.targets[1]]+'.':''}</small><div class="rpg-quest-reward">Récompense : <strong>+15 XP</strong></div>`:k==='weekly'&&q.kind==='objectives'?`<div class="rpg-quest-objectives">${q.objectives.map(o=>`<div class="rpg-quest-objective"><span class="rpg-check">${o.done?'✓':'○'}</span><span>${esc(o.title)}${['cards','diversity','daily','calls','callStreak','callCards'].includes(o.kind)?' ['+Math.min(o.kind==='daily'?rpgWeeklyDailyCount(q):o.progress||0,o.target)+'/'+o.target+']':''}</span></div>`).join('')}</div><small class="rpg-quest-progress">${q.correct}/${q.objectives.length} objectifs</small><div class="rpg-quest-reward">Récompense : <strong>+90 XP</strong></div>${q.objectives.some(o=>o.kind==='quiz'&&!o.done)?(q.weeklyQuestion?`${quizSubject(q.weeklyQuestion)}<p>${quizPrompt(q.weeklyQuestion)}</p>${quizAnswerButtons(q.weeklyQuestion,'data-weekly-answer')}`:`<button id="rpg-weekly-quiz">Interroger les archives</button>`):''}`:q.kind==='expedition'?`<p>Étape ${q.index+1} / ${q.steps.length} : ${esc(q.steps[q.index].title)}${['daily','cards','calls','callStreak'].includes(q.steps[q.index].kind)?' ['+Math.min(q.steps[q.index].progress||0,q.steps[q.index].target)+'/'+q.steps[q.index].target+']':''}</p><div class="rpg-quest-reward">Récompense : <strong>+50 XP</strong> par étape<span class="rpg-reward-line"><strong>+150 XP</strong> à la finale</span></div>`:`<p>${esc(x.text)}</p><small class="rpg-quest-progress">${q.index+1} / ${q.qs.length}</small><div class="rpg-quest-reward">Récompense : <strong>+${k==='daily'?15:k==='weekly'?90:150} XP</strong></div><div class="rpg-answers">${x.options.map((a,i)=>`<button data-rpg-q="${k}" data-rpg-a="${i}">${esc(a)}</button>`).join('')}</div>`}</section>`}html+=systemCallPanel()+binderQuizPlayerPanel();$('#view').innerHTML=html;questBindPlayer();save();document.querySelectorAll('[data-rpg-q]').forEach(b=>b.onclick=()=>{let q=r.quests[b.dataset.rpgQ],x=q.qs[q.index];let ok=x.options[Number(b.dataset.rpgA)]===x.answer;if(ok)q.correct++;q.index++;q.done=q.index>=q.qs.length;let earned=0;if(b.dataset.rpgQ==='monthly'&&ok){earned=50;r.bonus+=earned;q.stepRewards=(q.stepRewards||0)+1}if(q.done&&q.correct===q.qs.length&&!q.rewarded){const completion=({daily:15,weekly:90,monthly:150}[b.dataset.rpgQ]);earned+=completion;r.bonus+=completion;q.rewarded=true;if(b.dataset.rpgQ==='daily'){const today=q.period,prev=r.dailyStreak?.lastDay;const previous=new Date(today+'T12:00:00');previous.setDate(previous.getDate()-1);const yesterday=[previous.getFullYear(),String(previous.getMonth()+1).padStart(2,'0'),String(previous.getDate()).padStart(2,'0')].join('-');const current=prev===yesterday?(r.dailyStreak?.current||0)+1:1;r.dailyStreak={lastDay:today,current,best:Math.max(current,r.dailyStreak?.best||0)}}}save();rpgNotice(q.done&&q.rewarded?'Quête accomplie':earned?'Étape accomplie':ok?'Réponse correcte':'Les archives répondent',earned?'+'+earned+' XP':ok?'Bonne réponse. La quête continue.':'Réponse : '+x.answer);render()});if($('#rpg-weekly-quiz'))$('#rpg-weekly-quiz').onclick=()=>{const q=r.quests.weekly;if(!q||q.done||q.period!==rpgPeriod('weekly'))return;q.weeklyQuestion=rpgQuestion('weekly')||rpgQuestion('urgent');if(!q.weeklyQuestion){rpgNotice('Archives indisponibles','Aucune question disponible pour le moment.');return}save();render()};document.querySelectorAll('[data-weekly-answer]').forEach(b=>b.onclick=()=>{const q=r.quests.weekly,x=q?.weeklyQuestion;if(!x||q.period!==rpgPeriod('weekly')||q.done)return;const correct=x.options[Number(b.dataset.weeklyAnswer)]===x.answer;if(correct){const objective=q.objectives.find(o=>o.kind==='quiz');if(objective)objective.done=true;delete q.weeklyQuestion;rpgWeeklySync();rpgNotice('Les archives ont parlé','Bonne réponse. Objectif validé.')}else{delete q.weeklyQuestion;rpgNotice('Réponse incorrecte','La bonne réponse était : '+x.answer+'. Vous pourrez réessayer.')}save();render()});if($('#rpg-exceptional-reset'))$('#rpg-exceptional-reset').onclick=rpgExceptionalReset;if($('#rpg-voluntary-start'))$('#rpg-voluntary-start').onclick=rpgVoluntaryStart;document.querySelectorAll('[data-vclass-answer]').forEach(b=>b.onclick=()=>rpgVoluntaryAnswer(Number(b.dataset.vclassAnswer)));document.querySelectorAll('[data-vclass-choose]').forEach(b=>b.onclick=()=>rpgVoluntaryChoose(b.dataset.vclassChoose));if($('#rpg-class'))$('#rpg-class').onclick=()=>{if(cq.rank<=0){rpgNotice('Jugement différé','Les caractéristiques doivent atteindre le niveau 5 pour accéder au première strate.');return}if(cq.rank>0){r.className=cq.target;r.classRanks??={};r.classRanks[cq.target]=Math.max(r.classRanks[cq.target]||0,cq.rank)}r.classProgress=m.classProgress;r.history.push({name:cq.target,type:cq.type||'class',rank:cq.rank||0,at:new Date().toISOString(),level:cq.judgmentLevel||m.level});if(r.classJudgments?.pending?.[0]===cq.judgmentLevel)r.classJudgments.pending.shift();delete r.classQuest;save();rpgNotice(cq.type==='rank'?'Jugement de strate':cq.type==='dual'?'Jugement des deux voies':'Éveil de classe',cq.rank?cq.target+' · Rang '+['','I','II','III','IV','V'][cq.rank]:'Jugement enregistré. Strate inaccessible pour le moment.');render()};}
 setInterval(()=>{if(!document.hidden && state?.rpg?.awake && renderedQuestDay!==rpgPeriod('daily') && !document.querySelector('dialog[open]')) render()},15000);
 function rpgResume(){if(!state||document.querySelector('dialog[open]'))return;if(state.rpg?.awake&&renderedQuestDay!==rpgPeriod('daily')){render();return}const old=state.rpg?.urgent?.status;const period=state.rpg?.urgent?.period;if(state.rpg?.awake)rpgUrgentSync();const next=state.rpg?.urgent?.status;const changed=old!==next||period!==state.rpg?.urgent?.period;const blocked=['stats','journal','player'].includes(page)&&rpgSanctionActive(page);const screen=!!document.querySelector('#rpg-sanction-clock');if(changed||blocked!==screen)render();else if(['pending','quiz','passed','failed'].includes(next)&&!state.rpg.urgent.resultShown)rpgUrgentPrompt();else rpgNoticeDrain()}
 window.addEventListener('focus',rpgResume);document.addEventListener('visibilitychange',()=>{if(!document.hidden)rpgResume()});document.addEventListener('click',()=>{if(state&&!state.rpg?.awake&&Date.now()>=rpgGate&&!$('#editor').open)render()},true);
