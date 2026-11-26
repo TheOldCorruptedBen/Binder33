@@ -1,4 +1,4 @@
-const CACHE='binder33-cache-v6';
+const CACHE='binder33-cache-v7';
 const ROOT=new URL('./',self.location.href);
 const ASSETS=['./','./index.html','./cards.json','./manifest.json','./icon.png','./tcg-list.json'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(ASSETS.map(p=>new Request(new URL(p,ROOT),{cache:'reload'})));await self.skipWaiting();})()));
