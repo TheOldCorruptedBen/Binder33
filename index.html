@@ -457,10 +457,23 @@ article small.illustrator-uncredited{color:#999;font-style:italic}
 #companion-erasure .row{flex-wrap:wrap;margin-top:18px}
 #companion-erasure .erase-icon,#cv-ban .erase-icon{width:20px;height:20px;vertical-align:middle}
 #companion-erasure p{line-height:1.55}
-</style></head><body><main><header>BINDER<em>33/</em> <span class="app-version"></span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Exploits</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="companion-erasure" aria-labelledby="erasure-title"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
+.trio-review-action,.trio-review button{color:#a9fff4;background:#183a40;border-color:#367b80}
+.trio-review-action{display:flex;align-items:center;gap:8px;margin:12px 0}
+.trio-review-action svg{width:20px;height:20px}
+.trio-review{background:#101e25;border-color:#367b80;color:#e8fffc}
+.trio-review details{background:#14262d;border:1px solid #367b80;border-radius:12px;margin:10px 0;padding:12px}
+.trio-review summary{cursor:pointer;color:#a9fff4}
+.trio-review small{display:block;color:#a6cfce;margin-top:4px;overflow-wrap:anywhere}
+.trio-review .row{flex-wrap:wrap;gap:8px;padding:10px 0;border-bottom:1px solid #29434a}
+.trio-review .row>div{flex:1 1 160px}
+.trio-review .row button{flex:none}
+.trio-review h3{margin:12px 0 0;font-size:14px;color:#a6cfce}
+.trio-mark{display:inline-flex;color:#e7b65a;vertical-align:middle}
+.trio-mark svg{width:17px;height:17px}
+</style></head><body><main><header>BINDER<em>33/</em> <span class="app-version"></span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Exploits</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="trio-review" class="trio-review" aria-labelledby="trio-review-title"></dialog><dialog id="companion-erasure" aria-labelledby="erasure-title"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
 // Single public version after the System awakening.
-const binderRelease = '2.9.11';
-const binderDevelopmentCount = 288;
+const binderRelease = '2.9.12';
+const binderDevelopmentCount = 289;
 function binderVersion() { return binderRelease; }
 const fields={ref:'Référence',name:'Nom',rarity:'Rareté',type:'Type',tcg:'TCG',publisher:'Éditeur',illustrator:'Illustrateur',set:'Set',lang:'Langue',notes:'Notes'}, keys=['tcg','set','rarity','type','lang','publisher','illustrator'];const optionalCardLists=new Set(['publisher','illustrator']);let state,page='collection',query='',sort='binder',filters={},currentPage=1,pageSize=33;const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])), norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim(), ordered=a=>[...new Set(a)].sort((a,b)=>a.localeCompare(b,'fr',{numeric:true,sensitivity:'base'}));const binderStorageKey='binder33-v1';
 let savedBinderState;
@@ -723,7 +736,105 @@ function matchesTrioGroup(group,c){
     return other&&ref.number===other.number&&trioPrefixClose(ref.prefix,other.prefix);
   });
 }
-function trioGroups(C,minimum=3){const groups=[];for(const c of C){if(!norm(c.tcg)||!norm(c.ref))continue;const group=groups.find(g=>matchesTrioGroup(g,c));if(group)group.push(c);else groups.push([c])}return groups.filter(g=>g.length>=minimum)}
+function detectTrios(C,minimum=3){const groups=[];for(const c of C){if(!norm(c.tcg)||!norm(c.ref))continue;const group=groups.find(g=>matchesTrioGroup(g,c));if(group)group.push(c);else groups.push([c])}return groups.filter(g=>g.length>=minimum)}
+// A review freezes membership by card ID. The original detector still handles
+// every unreviewed card outside those groups, including translated versions.
+function validTrioReviews(reviews){
+ if(reviews===undefined)return true;
+ if(!Array.isArray(reviews))return false;
+ const ids=new Set(),assigned=new Set();
+ return reviews.every(row=>{
+  if(!row||typeof row.id!=='string'||!row.id||ids.has(row.id)||typeof row.original!=='boolean'||
+    !Array.isArray(row.members)||!Array.isArray(row.excluded))return false;
+  ids.add(row.id);
+  const excludes=new Set();
+  for(const card of row.excluded){
+   if(!card||!Number.isInteger(card.id)||excludes.has(card.id)||
+     !['name','ref','tcg','set','lang','type'].every(k=>typeof card[k]==='string'))return false;
+   excludes.add(card.id);
+  }
+  return row.members.every(id=>{
+   if(!Number.isInteger(id)||excludes.has(id)||assigned.has(id))return false;
+   assigned.add(id);
+   return true;
+  });
+ });
+}
+function trioRows(cards,reviews=state?.trioReviews||[],referenceCards=cards){
+ const live=new Map(referenceCards.map(card=>[card.id,card]));
+ const owned=new Map();
+ const reviewed=reviews.map(review=>{
+  const anchors=review.members.map(id=>live.get(id)).filter(Boolean);
+  const excluded=new Set(review.excluded.map(card=>card.id));
+  const row={...review,cards:[],anchors,excludedIds:excluded};
+  for(const id of review.members)owned.set(id,row);
+  return row;
+ });
+ const unassigned=[];
+ for(const card of cards){
+  if(owned.has(card.id)){
+   owned.get(card.id).cards.push(card);
+  }else if(norm(card.tcg)&&norm(card.ref)){
+   unassigned.push(card);
+  }
+ }
+ const automatic=[];
+ for(const card of unassigned){
+  let best=null,score=0;
+  for(const row of reviewed){
+   if(row.excludedIds.has(card.id)||!row.anchors.length||!matchesTrioGroup(row.anchors,card))continue;
+   const name=row.anchors.some(anchor=>norm(anchor.name)===norm(card.name));
+   const set=row.anchors.some(anchor=>setGroupKey(anchor.tcg,anchor.set)===setGroupKey(card.tcg,card.set));
+   const rank=Number(name)*4+Number(set)*2+Number(row.original);
+   if(rank>score){best=row;score=rank}
+  }
+  if(best)best.cards.push(card);
+  else automatic.push(card);
+ }
+ return [...reviewed,...detectTrios(automatic,1).map(group=>({
+  id:'auto:'+Math.min(...group.map(card=>card.id)),original:true,cards:group,excluded:[]
+ }))];
+}
+function trioGroups(cards,minimum=3){
+ if(!state?.trioReviews?.length)return detectTrios(cards,minimum);
+ return trioRows(cards,state?.trioReviews||[],state?.cards||cards)
+  .map(row=>row.cards).filter(group=>group.length>=minimum);
+}
+function reviseTrio(rows,reviews,groupId,cardId,restore){
+ const next=structuredClone(reviews);
+ const row=rows.find(item=>item.id===groupId);
+ const live=state.cards.find(card=>card.id===cardId);
+ if(!row||!live)return null;
+ const card=restore?row.excluded.find(card=>card.id===cardId):row.cards.find(card=>card.id===cardId);
+ if(!card)return null;
+ let target=next.find(item=>item.id===groupId);
+ if(!target){
+  target={id:'review:'+crypto.randomUUID(),original:true,members:[],excluded:[]};
+  next.push(target);
+ }
+ // Carry forward all current assignments before changing ownership.
+ for(const review of next){
+  const current=review===target?row:rows.find(item=>item.id===review.id);
+  if(current)review.members=[...new Set([...review.members,...current.cards.map(card=>card.id)])];
+ }
+ for(const review of next)review.members=review.members.filter(id=>id!==cardId);
+ if(restore){
+  target.members.push(cardId);
+  target.excluded=target.excluded.filter(card=>card.id!==cardId);
+ }else{
+  target.excluded.push({id:cardId,...Object.fromEntries(['name','ref','tcg','set','lang','type'].map(key=>[key,String(live[key]??'')]))});
+  next.push({id:'review:'+crypto.randomUUID(),original:false,members:[cardId],excluded:[]});
+ }
+ return {reviews:next,groupId:target.id};
+}
+function syncTrioMembership(){
+ if(!state.trioReviews?.length)return;
+ const rows=trioRows(state.cards);
+ for(const review of state.trioReviews){
+  const row=rows.find(row=>row.id===review.id);
+  review.members=[...new Set([...review.members,...row.cards.map(card=>card.id)])];
+ }
+}
 function cardMatchHint(card){
   if(!['tcg','ref','lang'].every(key=>norm(card[key])))return null;
   const exact=norm(card.type)&&norm(card.set)&&duplicate(card);
@@ -731,7 +842,10 @@ function cardMatchHint(card){
     const {binder,page,slot}=memoryLocation(state.cards.indexOf(exact)+1);
     return {kind:'duplicate',message:'Cette version est déjà dans le Binder',detail:`Classeur ${binder} · page ${page} · emplacement ${slot}`};
   }
-  const versions=state.cards.filter(other=>other.id!==card.id&&matchesTrioGroup([other],card));
+  const versions=state.trioReviews?.length
+    ?(trioRows([...state.cards.filter(other=>other.id!==card.id),{...card,id:card.id??state.nextId}])
+      .find(row=>row.cards.some(other=>other.id===(card.id??state.nextId)))?.cards||[]).filter(other=>other.id!==(card.id??state.nextId))
+    :state.cards.filter(other=>other.id!==card.id&&matchesTrioGroup([other],card));
   if(!versions.length)return null;
   const count=versions.length===1?'1 version déjà dans le Binder':`${versions.length} versions déjà dans le Binder`;
   const message=norm(card.type)&&norm(card.set)?'Nouvelle variante · '+count:count;
@@ -742,7 +856,7 @@ function bindCardMatchHint(editedCard){
   const notice=$('#card-match');
   const message=notice.querySelector('strong');
   const detail=notice.querySelector('small');
-  const fields=['tcg','set','ref','lang','type'].map(key=>[key,$('#f-'+key)]);
+  const fields=['name','tcg','set','ref','lang','type'].map(key=>[key,$('#f-'+key)]);
   function update(){
     const draft=Object.fromEntries(fields.map(([key,input])=>[key,input.value]));
     const hint=cardMatchHint({...draft,id:editedCard?.id});
@@ -767,7 +881,7 @@ function illustratorRows(cards){
     if(!byName.has(key))byName.set(key,{name:card.illustrator.trim(),cards:[]});
     byName.get(key).cards.push(card);
   }
-  return [...byName.values()].map(row=>({...row,works:trioGroups(row.cards,1)}));
+  return [...byName.values()].map(row=>({...row,works:detectTrios(row.cards,1)}));
 }
 const illustratorCreditLabels={
   named:'Illustrateur renseigné',
@@ -836,7 +950,81 @@ function bindIllustratorSearch(){
   update();
 }
 function trioDisplayRefs(group){const refs=[...new Set(group.map(c=>String(c.ref||'').trim()).filter(Boolean))];if(refs.length<=1)return refs[0]||'';const parts=refs.map(trioRefParts);if(parts.every(Boolean)&&parts.every(p=>p.number===parts[0].number)){const prefixes=[...new Set(parts.map(p=>p.prefix.toUpperCase()))];return prefixes.join('/')+' '+parts[0].number}return refs.join(' · ')}
-function trioPanel(){const rows=trioGroups(state.cards).sort((a,b)=>b.length-a.length||a[0].name.localeCompare(b[0].name,'fr')||a[0].tcg.localeCompare(b[0].tcg,'fr'));return statFold('trios','Trios de l’Expédition',`${rows.length} trio${rows.length===1?'':'s'}`,rows.map(g=>{const positions=g.map(c=>state.cards.indexOf(c)+1).sort((a,b)=>a-b).map(p=>{const l=memoryLocation(p);return `${l.binder}.${l.page}.${l.slot}`});return `<button type="button" class="stat-link trio-row trio-layout" data-stat-key="trio" data-stat-value="${esc(trioKey(g[0]))}"><span class="trio-name">${esc(g[0].name)}${g.length>=4?' <span class="trio-star" title="Trio Ultime" aria-label="Trio Ultime">❖</span>':''}</span><span class="trio-count">${g.length} variantes</span><small class="trio-meta">${esc(g[0].tcg)} · ${esc(trioDisplayRefs(g))}</small><span class="trio-positions">${positions.map(p=>`<span>${p}</span>`).join('')}</span></button>`}).join('')||'<small>Aucun trio découvert pour le moment.</small>')}
+const trioCheckIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8 12 3 3 5-6"/></svg>';
+function trioMark(count){
+ const label=count>=4?'Trio sublimé':'Trio';
+ return `<span class="trio-mark" role="img" aria-label="${label}" title="${label}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="7" r="3"/><circle cx="7" cy="16" r="3"/><circle cx="17" cy="16" r="3"/>${count>=4?'<circle cx="12" cy="13" r="1"/>':''}</svg></span>`;
+}
+function trioPanel(){
+ const rows=trioRows(state.cards).filter(row=>row.cards.length>=3).sort((a,b)=>
+  b.cards.length-a.cards.length||a.cards[0].name.localeCompare(b.cards[0].name,'fr'));
+ const content=rows.map(({id,cards})=>{
+  const first=cards[0];
+  const positions=cards.map(c=>state.cards.indexOf(c)+1).sort((a,b)=>a-b).map(p=>{
+   const l=memoryLocation(p);
+   return `${l.binder}.${l.page}.${l.slot}`;
+  });
+  return `<button type="button" class="stat-link trio-row trio-layout" data-stat-key="trio" data-stat-value="${esc(id)}"><span class="trio-name">${esc(first.name)}${cards.length>=4?' '+trioMark(cards.length):''}</span><span class="trio-count">${cards.length} variantes</span><small class="trio-meta">${esc(first.tcg)} · ${esc(trioDisplayRefs(cards))}</small><span class="trio-positions">${positions.map(p=>`<span>${p}</span>`).join('')}</span></button>`;
+ }).join('')||'<small>Aucun trio découvert pour le moment.</small>';
+ return statFold('trios','Trios de l’Expédition',`${rows.length} trio${rows.length===1?'':'s'}`,
+  '<button class="trio-review-action" id="trio-review-open" type="button">'+trioCheckIcon+'Vérifier les Trios</button>'+content);
+}
+function showTrioReview(selectedId){
+ const dialog=$('#trio-review');
+ const rows=trioRows(state.cards);
+ const visible=rows.filter(row=>row.cards.length>=3||row.excluded.length);
+ const live=new Map(state.cards.map(card=>[card.id,card]));
+ const open=new Set([...dialog.querySelectorAll('details[open]')].map(section=>section.dataset.trioReview));
+ if(selectedId)open.add(selectedId);
+ const cardHtml=(card,excluded)=>{
+  const present=live.has(card.id);
+  const label=excluded?'Réintégrer':'Exclure';
+  return `<div class="row"><div><strong>${esc(card.name)}</strong><small>${[card.ref,setDisplay(card.tcg,card.set),card.lang,card.type].map(esc).join(' · ')}</small></div>
+   ${present?`<button type="button" data-trio-card="${card.id}" data-trio-restore="${excluded}" aria-label="${label} ${esc(card.name)} · ${esc(card.lang)} · ${esc(card.type)}">${label}</button>`:'<small>Carte supprimée</small>'}</div>`;
+ };
+ dialog.innerHTML=`<h2 id="trio-review-title">Vérifier les Trios</h2>
+  <p class="muted">Les exclusions s’appliquent au regroupement sélectionné. Un regroupement compte comme Trio à partir de trois cartes.</p>
+  <p role="status" id="trio-review-status" hidden></p>
+  ${visible.map(row=>{
+   const first=row.cards[0]||row.excluded[0];
+   return `<details data-trio-review="${esc(row.id)}" ${open.has(row.id)?'open':''}>
+    <summary>${esc(first.name)} · ${esc(first.tcg)} · ${esc(trioDisplayRefs(row.cards)||first.ref)}
+     <small>${row.cards.length} carte(s) dans le regroupement · ${row.excluded.length} exclusion(s)</small></summary>
+    ${row.cards.map(card=>cardHtml(card,false)).join('')}
+    ${row.excluded.length?'<h3>Cartes exclues</h3>'+row.excluded.map(card=>cardHtml(live.get(card.id)||card,true)).join(''):''}</details>`;
+  }).join('')||'<p class="muted">Aucun Trio ni exclusion à vérifier.</p>'}
+  <form method="dialog"><button type="submit">Fermer</button></form>`;
+ if(!dialog.open){dialog.addEventListener('close',()=>$('#trio-review-open')?.focus(),{once:true});dialog.showModal()}
+ dialog.querySelectorAll('[data-trio-card]').forEach(button=>button.onclick=()=>{
+  const restore=button.dataset.trioRestore==='true';
+  const id=Number(button.dataset.trioCard);
+  const change=reviseTrio(rows,state.trioReviews||[],button.closest('details').dataset.trioReview,id,restore);
+  if(!change)return;
+  const source=rows.find(row=>row.id!==change.groupId&&row.cards.length>=3&&row.cards.some(card=>card.id===id));
+  if(restore&&source&&!confirm('Cette carte appartient aussi au regroupement « '+source.cards[0].name+' ». La déplacer vers le regroupement sélectionné ?'))return;
+  const previous=structuredClone(state);
+  try{
+   state.trioReviews=change.reviews;
+   const relocked=reconcileTrioAchievements(previous.trioReviews||[]);
+   refreshTrioQuestQuestions();
+   save();
+   achievementQueue=achievementQueue.filter(a=>!relocked.has(a.id));
+  }catch{
+   state=previous;
+   const status=$('#trio-review-status');
+   status.hidden=false;
+   status.textContent='La modification n’a pas pu être enregistrée. Réessayez après avoir actualisé le Binder.';
+   return;
+  }
+  render();
+  showTrioReview(change.groupId);
+  const section=[...dialog.querySelectorAll('details')].find(item=>item.dataset.trioReview===change.groupId);
+  (section?.querySelector('summary')||dialog.querySelector('form button')).focus();
+  const status=$('#trio-review-status');
+  status.hidden=false;
+  status.textContent=restore?'Carte réintégrée.':'Carte exclue de ce regroupement.';
+ });
+}
 
 let constellationSelected='', skyLayout=null;
 function constellationLayout(cards){const rows=tcgCounts(cards).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'fr'));const w=320,h=Math.max(440,Math.ceil(rows.length/4)*90+80),max=rows[0]?.[1]||1,stars=[];for(const [name,n] of rows){const r=7+15*Math.sqrt(n/max);let x,y;for(let j=0;j<3000;j++){x=35+Math.random()*250;y=35+Math.random()*(h-70);if(stars.every(p=>Math.hypot(p.x-x,p.y-y)>Math.max(44,p.r+r+12)))break;}stars.push({name,n,x,y,r});}return {w,h,stars};}
@@ -930,7 +1118,7 @@ function binderQuizKnowledgeStats(){
  const knowledgeIcon='<svg class="b33-knowledge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+rpgStatIcons.Intelligence+'</svg>';
  return '<div class="b33-knowledge">'+knowledgeIcon+statFold('quiz-knowledge','Maîtrise des connaissances','Quiz du Binder 33 · '+total+' questions',body)+'</div>';
 }
-function renderStats(){const n=state.cards.length,distinct=k=>new Set(state.cards.filter(c=>c[k]).map(c=>k==='set'?setGroupKey(c.tcg,c.set):k==='tcg'?tcgCanonical(c.tcg):c[k])).size;$('#view').innerHTML='<h2>Statistiques</h2>'+curiosityPanel()+constellationPanel()+'<section class="stat-panel stat-hero"><small>MA COLLECTION</small><strong>'+n+'</strong><span>Cartes collectionnées</span></section><div class="stat-kpis">'+[['TCG',distinct('tcg')],['Sets',distinct('set')],['Langues',distinct('lang')]].map(([k,v])=>'<div><strong>'+v+'</strong><small>'+k+'</small></div>').join('')+'</div>'+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m15.5 8.5-2.5 6-5 1 2-5z\"/></svg><span>Les Mondes Explorés</span></div>"+statGroup('tcg')+natureStats()+statGroup('set')+statGroup('rarity')+statGroup('type')+colorStats()+statGroup('lang')+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"8\" r=\"3\"/><path d=\"M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5\"/></svg><span>Les Compagnons de Route</span></div>"+contributorPanel()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 3h12l5 7-11 12L1 10zM1 10h22M6 3l3 7 3 12 3-12 3-7\"/></svg><span>Les Trésors de l’Expédition</span></div>"+trioPanel()+refletPanels()+relicStatsPanel()+vestigeStatsPanel()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m12 19 7-7 3-8-8 3-7 7-2 6 6-2zM14 10l-4 4M4 21h16\"/></svg><span>Les Artisans des Mondes</span></div>"+publisherStats()+illustratorStats()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 3h14M5 21h14M7 3v4c0 3 5 5 5 5s5-2 5-5V3M7 21v-4c0-3 5-5 5-5s5 2 5 5v4\"/></svg><span>Les Échos du Temps</span></div>"+timeStats()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 6c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V5c-3-1-7-1-10 1zM12 6v15\"/></svg><span>Les Chroniques de l’Expédition</span></div>"+originStats()+shopStats()+expeditionRecords()+exStats()+'<div class="stat-chapter" style="color:#58dcd3"><svg viewBox="0 0 24 24" aria-hidden="true" style="stroke:#58dcd3">'+rpgStatIcons.Intelligence+'</svg><span>Les Archives du Savoir</span></div>'+binderQuizKnowledgeStats();bindConstellation();document.querySelectorAll('[data-vestige-card]').forEach(b=>b.onclick=()=>{const c=state.cards.find(c=>String(c.id)===b.dataset.vestigeCard);if(c)edit(c)});document.querySelectorAll('[data-stat-fold]').forEach(d=>d.ontoggle=()=>{if(d.open)openStatSections.add(d.dataset.statFold);else openStatSections.delete(d.dataset.statFold)});$('#sky-open').onclick=()=>{page='sky';render();document.querySelector('main').scrollTop=0};$('#companions-open').onclick=()=>{page='companions';render();document.querySelector('main').scrollTop=0};$('#curiosity-next').onclick=()=>{$('#curiosity-text').textContent=nextCuriosity()};document.querySelectorAll('[data-stat-key]').forEach(b=>b.onclick=()=>{filters=b.dataset.statKey==='set'?{setGroup:b.dataset.statValue}:{[b.dataset.statKey]:b.dataset.statValue};query='';currentPage=1;page='collection';render();document.querySelector('main').scrollTop=0})}
+function renderStats(){const n=state.cards.length,distinct=k=>new Set(state.cards.filter(c=>c[k]).map(c=>k==='set'?setGroupKey(c.tcg,c.set):k==='tcg'?tcgCanonical(c.tcg):c[k])).size;$('#view').innerHTML='<h2>Statistiques</h2>'+curiosityPanel()+constellationPanel()+'<section class="stat-panel stat-hero"><small>MA COLLECTION</small><strong>'+n+'</strong><span>Cartes collectionnées</span></section><div class="stat-kpis">'+[['TCG',distinct('tcg')],['Sets',distinct('set')],['Langues',distinct('lang')]].map(([k,v])=>'<div><strong>'+v+'</strong><small>'+k+'</small></div>').join('')+'</div>'+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m15.5 8.5-2.5 6-5 1 2-5z\"/></svg><span>Les Mondes Explorés</span></div>"+statGroup('tcg')+natureStats()+statGroup('set')+statGroup('rarity')+statGroup('type')+colorStats()+statGroup('lang')+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"8\" r=\"3\"/><path d=\"M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5\"/></svg><span>Les Compagnons de Route</span></div>"+contributorPanel()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 3h12l5 7-11 12L1 10zM1 10h22M6 3l3 7 3 12 3-12 3-7\"/></svg><span>Les Trésors de l’Expédition</span></div>"+trioPanel()+refletPanels()+relicStatsPanel()+vestigeStatsPanel()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m12 19 7-7 3-8-8 3-7 7-2 6 6-2zM14 10l-4 4M4 21h16\"/></svg><span>Les Artisans des Mondes</span></div>"+publisherStats()+illustratorStats()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 3h14M5 21h14M7 3v4c0 3 5 5 5 5s5-2 5-5V3M7 21v-4c0-3 5-5 5-5s5 2 5 5v4\"/></svg><span>Les Échos du Temps</span></div>"+timeStats()+"<div class=\"stat-chapter\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 6c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V5c-3-1-7-1-10 1zM12 6v15\"/></svg><span>Les Chroniques de l’Expédition</span></div>"+originStats()+shopStats()+expeditionRecords()+exStats()+'<div class="stat-chapter" style="color:#58dcd3"><svg viewBox="0 0 24 24" aria-hidden="true" style="stroke:#58dcd3">'+rpgStatIcons.Intelligence+'</svg><span>Les Archives du Savoir</span></div>'+binderQuizKnowledgeStats();bindConstellation();$('#trio-review-open').onclick=()=>showTrioReview();document.querySelectorAll('[data-vestige-card]').forEach(b=>b.onclick=()=>{const c=state.cards.find(c=>String(c.id)===b.dataset.vestigeCard);if(c)edit(c)});document.querySelectorAll('[data-stat-fold]').forEach(d=>d.ontoggle=()=>{if(d.open)openStatSections.add(d.dataset.statFold);else openStatSections.delete(d.dataset.statFold)});$('#sky-open').onclick=()=>{page='sky';render();document.querySelector('main').scrollTop=0};$('#companions-open').onclick=()=>{page='companions';render();document.querySelector('main').scrollTop=0};$('#curiosity-next').onclick=()=>{$('#curiosity-text').textContent=nextCuriosity()};document.querySelectorAll('[data-stat-key]').forEach(b=>b.onclick=()=>{filters=b.dataset.statKey==='set'?{setGroup:b.dataset.statValue}:{[b.dataset.statKey]:b.dataset.statValue};query='';currentPage=1;page='collection';render();document.querySelector('main').scrollTop=0})}
 function render(){observeFinishShine();migrateTcgIdentities();exBanner();for(const c of state.cards){if(Array.isArray(c.colors)&&c.colors.includes('Crème'))c.colors=[...new Set(c.colors.map(v=>v==='Crème'?'Gris':v))];}publisherInit();illustratorInit();timeInit();journalInit();memorySync();migrateAchievementNames();companionSync();checkAchievements();updateCapsule();renderCollectorTitle();rpgSync();questRefresh();document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===(page==='sky'?'stats':page)));if(['pending','quiz','passed','failed'].includes(state.rpg?.urgent?.status)&&!state.rpg.urgent.resultShown)queueMicrotask(rpgUrgentPrompt);if(page==='player'){if(rpgSanctionScreen('player'))return;if(state.rpg?.awake){rpgQuest('daily');rpgQuest('weekly');rpgQuest('monthly');rpgWeeklySync();rpgMonthlySync(null)}renderPlayer();return}if(state.rpg?.awake&&['collection','stats','journal'].includes(page)&&!rpgSanctionActive(page==='stats'?'stats':page)){rpgQuest('daily');rpgQuest('weekly');rpgQuest('monthly');rpgWeeklySync();rpgMonthlySync(null);rpgTrackVisit(page)}queueMicrotask(()=>{rpgPlaceFragment();if(page!=='collection')questRenderAction()});if(page==='sky'){if(rpgSanctionScreen('stats'))return;renderSky();return}if(page==='companions'){renderCompanions();return}if(page==='journal'){if(rpgSanctionScreen('journal'))return;renderJournal();return}if(page==='achievements'){renderAchievements();return}if(page==='collection'){ $('#view').innerHTML=`<div class="row"><div><small>MA COLLECTION</small><h2>${state.cards.length} ${(state.cards.length)===1?'carte':'cartes'}</h2></div><button class="primary" id="add" ${rpgSanctionActive('add')?'disabled title="ACCÈS REFUSÉ : ajout de carte temporairement interdit"':''} aria-label="Poursuivre l’expédition : ajouter une carte"><svg class="expedition-rose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 13C6 13 4 8 7 5C9 3 11 4 12 5C14 2 19 4 19 8C19 11 16 13 12 13Z"/><path d="M7 5C7 9 11 11 15 9C18 7 15 4 12 5C9 6 11 9 13 8"/><path d="M12 13V22M12 18C8 18 5 16 5 14C9 14 12 16 12 18M12 20C16 20 19 17 19 15C15 15 12 18 12 20"/></svg><span>Poursuivre…</span></button></div><div class="collection-search"><input id="search" placeholder="Nom, référence…" value="${esc(query)}"><button type="button" id="search-clear" aria-label="Effacer la recherche" ${query?"":"hidden"}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="row" style="margin:12px 0"><select id="sort" style="width:auto"><option value="binder">Ordre Binder</option><option value="yearAsc">Année : ancienne → récente</option><option value="yearDesc">Année : récente → ancienne</option>${['name','tcg','ref','rarity','set','lang','type'].map(k=>`<option value="${k}">${fields[k]}</option>`).join('')}</select><button id="filter">Filtres<span id="filter-dot" hidden aria-label="Filtres actifs"></span></button></div><div id="active-filter" class="active-filter"></div><div id="filters" class="hidden">${keys.map(k=>`<label>${fields[k]}</label><select data-filter="${k}">${select(k,filters[k])}</select>`).join('')}<label>Famille de raretés</label><select data-filter="rarityFamily"><option value="">Toutes</option>${rarityFamilies().map(f=>`<option value="${esc(f.id)}" ${filters.rarityFamily===f.id?'selected':''}>${esc(f.name)}</option>`).join('')}</select><label>Année de sortie</label><select data-filter="year"><option value="">Toutes</option>${[...years(state.cards),'unknown'].map(y=>`<option value="${y}" ${filters.year===String(y)?'selected':''}>${y==='unknown'?'Non renseignée':y}</option>`).join('')}</select><label>Origine</label><select data-filter="origin"><option value="">Toutes</option>${[['personal','L’Explorateur'],...originStatDefs].map(([k,label])=>`<option value="${k}" ${filters.origin===k?'selected':''}>${label}</option>`).join('')}</select><label>Contributeur</label><select data-filter="donor"><option value="">Tous</option>${donorNames().map(n=>`<option value="${esc(n)}" ${filters.donor===n?'selected':''}>${esc(n)}</option>`).join('')}</select><label>Vestiges du Passé</label><select data-filter="vestige"><option value="">Toutes</option><option value="yes" ${filters.vestige==='yes'?'selected':''}>Vestiges uniquement</option></select><label>Reliques légendaires</label><select data-filter="relic"><option value="">Toutes</option><option value="yes" ${filters.relic==='yes'?'selected':''}>Reliques uniquement</option></select><label>Couleur de la carte</label><select data-filter="color"><option value="">Toutes</option>${colorNames.map(n=>`<option ${filters.color===n?'selected':''}>${n}</option>`).join('')}</select></div><div class="row" style="margin:16px 0 4px"><small id="range"></small></div><div id="pagination-top" class="binder-pagination"></div><div id="cards"></div><button type="button" id="add-next" hidden aria-label="Pour celle qui vient maintenant : ajouter une carte"><svg class="expedition-rose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 13C6 13 4 8 7 5C9 3 11 4 12 5C14 2 19 4 19 8C19 11 16 13 12 13Z"/><path d="M7 5C7 9 11 11 15 9C18 7 15 4 12 5C9 6 11 9 13 8"/><path d="M12 13V22M12 18C8 18 5 16 5 14C9 14 12 16 12 18M12 20C16 20 19 17 19 15C15 15 12 18 12 20"/></svg><span>Pour celle qui vient maintenant…</span></button><div id="pagination" class="binder-pagination"></div>`;$('#sort').value=sort;$('#sort').onchange=e=>{sort=e.target.value;currentPage=1;list()};$('#search').oninput=e=>{query=e.target.value;$('#search-clear').hidden=!query;currentPage=1;list()};$('#search-clear').onclick=()=>{const input=$('#search');input.value='';input.blur();input.dispatchEvent(new Event('input',{bubbles:true}));};$('#add').onclick=()=>edit();$('#add-next').onclick=()=>edit();$('#filter').onclick=()=>$('#filters').classList.toggle('hidden');document.querySelectorAll('[data-filter]').forEach(e=>e.onchange=()=>{filters[e.dataset.filter]=e.value;currentPage=1;list()});list()}else if(page==='stats'){if(rpgSanctionScreen('stats'))return;renderStats()}else settingsV2()}
 function renderPagination(pages){
  const go=value=>{const n=Number(value);if(!Number.isInteger(n)||n<1||n>pages||n===currentPage){document.querySelectorAll('.binder-page-number').forEach(e=>e.value=currentPage);return;}const scroller=$('main');if(document.activeElement?.matches('.binder-page-number'))document.activeElement.blur();scroller.scrollTop=0;currentPage=n;list();scroller.scrollTop=0;requestAnimationFrame(()=>{if(page==='collection'&&currentPage===n){scroller.scrollTop=0;}});};
@@ -956,7 +1144,10 @@ function collectionOriginIcon(card){
   return `<span class="binder-origin" title="${esc(label)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="${esc(label)}">${artwork}</svg></span>`;
 }
 let collectionNavigationIds=[];
-function list(){const hasFilters=Object.values(filters).some(Boolean);$('#filter-dot').hidden=!hasFilters;const active=$('#active-filter');if(active){active.innerHTML=Object.entries(filters).filter(([k,v])=>v).map(([k,v])=>`<button type="button" data-clear-filter="${k}">${esc(k==='origin'?(v==='personal'?'L’Explorateur':originStatDefs.find(r=>r[0]===v)?.[1]||v):k==='trio'?'Trio : '+(state.cards.find(c=>trioKey(c)===v)?.name||'Carte'):k==='rarityFamily'?rarityLabel(v):k==='illustratorStatus'?illustratorCreditLabels[v]:k==='relic'?'Reliques légendaires':k==='vestige'?'Vestiges du Passé':k==='color'&&v==='Sans'?'Sans couleur':v)} ×</button>`).join('')+(hasFilters?'<button type="button" class="clear-all-filters" id="clear-all-filters">Tout effacer</button>':'');active.querySelectorAll('[data-clear-filter]').forEach(b=>b.onclick=()=>{const wasOpen=!$('#filters').classList.contains('hidden');delete filters[b.dataset.clearFilter];currentPage=1;render();if(wasOpen)$('#filters').classList.remove('hidden')});const clear=$('#clear-all-filters');if(clear)clear.onclick=()=>{const wasOpen=!$('#filters').classList.contains('hidden');filters={};currentPage=1;render();if(wasOpen)$('#filters').classList.remove('hidden')};}let positions=new Map(state.cards.map((c,i)=>[c.id,i+1]));let a=state.cards.filter(c=>[c.name,c.ref,c.set,c.tcg,c.publisher,c.illustrator].some(v=>norm(v).includes(norm(query)))&&(!filters.year||(filters.year==='unknown'?!validYear(c.year):String(c.year)===filters.year))&&keys.every(k=>!filters[k]||(k==='publisher'&&filters[k]==='__independent__'?!c.publisher:(k==='tcg'?tcgCanonical(c.tcg)===tcgCanonical(filters[k]):c[k]===filters[k])))&&(!filters.setGroup||setGroupKey(c.tcg,c.set)===filters.setGroup)&&(!filters.illustratorStatus||illustratorCreditStatus(c)===filters.illustratorStatus)&&(!filters.rarityFamily||rarityKey(c.rarity)===filters.rarityFamily)&&(!filters.origin||(filters.origin==='personal'?personalOrigins.includes(c.origin):originStatKey(c)===filters.origin))&&(!filters.boosterChooser||(c.origin==='booster'&&c.boosterChooser===filters.boosterChooser))&&(!filters.donor||(c.origin==='gift'&&c.donor===filters.donor))&&(!filters.trio||trioGroups(state.cards).some(g=>trioKey(g[0])===filters.trio&&g.includes(c)))&&(!filters.relic||c.relic===true)&&(!filters.vestige||c.vestige===true)&&(!filters.color||(filters.color==='Sans'?!cardColors(c).length:cardColors(c).includes(filters.color))));a.sort((a,b)=>sort==='binder'?positions.get(a.id)-positions.get(b.id):sort==='yearAsc'||sort==='yearDesc'?yearCompare(a,b,sort):String(a[sort]).localeCompare(String(b[sort]),'fr',{numeric:true,sensitivity:'base'})||a.id-b.id);collectionNavigationIds=a.map(c=>c.id);let total=a.length,pages=Math.max(1,Math.ceil(total/pageSize));currentPage=Math.min(Math.max(1,currentPage),pages);let start=(currentPage-1)*pageSize;$('#range').textContent=total?`Cartes ${start+1} à ${Math.min(start+pageSize,total)} sur ${total}`:'0 carte';renderPagination(pages);$('#add-next').hidden=!(sort==='binder'&&!hasFilters&&!norm(query)&&currentPage===pages);$('#cards').innerHTML=a.slice(start,start+pageSize).map(c=>`<article data-id="${c.id}"><div class="collection-heading"><span class="card-title">${colorSquare(cardColors(c))}<strong>${esc(c.name)}</strong>${finishBadge(c.type,c.id)}${c.relic?'<span class="relic-mark" title="Relique légendaire">✦</span>':''}${c.vestige?'<span class="vestige-mark" title="Vestige du Passé" aria-label="Vestige du Passé"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14M5 21h14M7 3v4l5 5-5 5v4M17 3v4l-5 5 5 5v4"/></svg></span>':''}</span><small class="binder-position">#${positions.get(c.id)}${collectionOriginIcon(c)}</small></div><div class="collection-details"><div><small>${esc(c.ref)} · ${esc(c.tcg)} · ${esc(setDisplay(c.tcg,c.set))}${validYear(c.year)?' · '+esc(setDate(c)):''}</small>${c.publisher?`<small>${esc(c.publisher)}</small>`:''}${illustratorCredit(c)}${anonymousGift(c)?'<small>Don anonyme</small>':''}${c.origin==='booster'&&c.boosterChooser?`<small>Booster choisi par ${esc(c.boosterChooser)}</small>`:''}</div><span class="muted" title="${esc(rarityFull(c.rarity))}">${esc(rarityShort(c.rarity))}</span><span>${esc(flags(c.lang))}</span><a class="google-search" href="https://www.google.com/search?q=${esc(encodeURIComponent(c.name+' '+c.ref))}" target="_blank" rel="noopener noreferrer" aria-label="Rechercher ${esc(c.name)} ${esc(c.ref)} sur Google" title="Rechercher sur Google"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a><span class="muted">›</span></div></article>`).join('')||'<p class="muted">Aucune carte.</p>';observeFinishShine($('#cards'));document.querySelectorAll('article').forEach(e=>e.onclick=event=>{if(event.target.closest('.google-search'))return;const card=state.cards.find(c=>c.id===+e.dataset.id);if(card&&!questTryCard(card))edit(card,{},collectionNavigationIds)});if(activeQuestAction&&page==='collection')questRenderAction()}
+function list(){const trios=trioRows(state.cards).filter(row=>row.cards.length>=3);
+const activeTrio=trios.find(row=>row.id===filters.trio);
+const trioSizes=new Map(trios.flatMap(row=>row.cards.map(card=>[card.id,row.cards.length])));
+const hasFilters=Object.values(filters).some(Boolean);$('#filter-dot').hidden=!hasFilters;const active=$('#active-filter');if(active){active.innerHTML=Object.entries(filters).filter(([k,v])=>v).map(([k,v])=>`<button type="button" data-clear-filter="${k}">${esc(k==='origin'?(v==='personal'?'L’Explorateur':originStatDefs.find(r=>r[0]===v)?.[1]||v):k==='trio'?'Trio : '+(activeTrio?.cards[0].name||'Carte'):k==='rarityFamily'?rarityLabel(v):k==='illustratorStatus'?illustratorCreditLabels[v]:k==='relic'?'Reliques légendaires':k==='vestige'?'Vestiges du Passé':k==='color'&&v==='Sans'?'Sans couleur':v)} ×</button>`).join('')+(hasFilters?'<button type="button" class="clear-all-filters" id="clear-all-filters">Tout effacer</button>':'');active.querySelectorAll('[data-clear-filter]').forEach(b=>b.onclick=()=>{const wasOpen=!$('#filters').classList.contains('hidden');delete filters[b.dataset.clearFilter];currentPage=1;render();if(wasOpen)$('#filters').classList.remove('hidden')});const clear=$('#clear-all-filters');if(clear)clear.onclick=()=>{const wasOpen=!$('#filters').classList.contains('hidden');filters={};currentPage=1;render();if(wasOpen)$('#filters').classList.remove('hidden')};}let positions=new Map(state.cards.map((c,i)=>[c.id,i+1]));let a=state.cards.filter(c=>[c.name,c.ref,c.set,c.tcg,c.publisher,c.illustrator].some(v=>norm(v).includes(norm(query)))&&(!filters.year||(filters.year==='unknown'?!validYear(c.year):String(c.year)===filters.year))&&keys.every(k=>!filters[k]||(k==='publisher'&&filters[k]==='__independent__'?!c.publisher:(k==='tcg'?tcgCanonical(c.tcg)===tcgCanonical(filters[k]):c[k]===filters[k])))&&(!filters.setGroup||setGroupKey(c.tcg,c.set)===filters.setGroup)&&(!filters.illustratorStatus||illustratorCreditStatus(c)===filters.illustratorStatus)&&(!filters.rarityFamily||rarityKey(c.rarity)===filters.rarityFamily)&&(!filters.origin||(filters.origin==='personal'?personalOrigins.includes(c.origin):originStatKey(c)===filters.origin))&&(!filters.boosterChooser||(c.origin==='booster'&&c.boosterChooser===filters.boosterChooser))&&(!filters.donor||(c.origin==='gift'&&c.donor===filters.donor))&&(!filters.trio||activeTrio?.cards.includes(c))&&(!filters.relic||c.relic===true)&&(!filters.vestige||c.vestige===true)&&(!filters.color||(filters.color==='Sans'?!cardColors(c).length:cardColors(c).includes(filters.color))));a.sort((a,b)=>sort==='binder'?positions.get(a.id)-positions.get(b.id):sort==='yearAsc'||sort==='yearDesc'?yearCompare(a,b,sort):String(a[sort]).localeCompare(String(b[sort]),'fr',{numeric:true,sensitivity:'base'})||a.id-b.id);collectionNavigationIds=a.map(c=>c.id);let total=a.length,pages=Math.max(1,Math.ceil(total/pageSize));currentPage=Math.min(Math.max(1,currentPage),pages);let start=(currentPage-1)*pageSize;$('#range').textContent=total?`Cartes ${start+1} à ${Math.min(start+pageSize,total)} sur ${total}`:'0 carte';renderPagination(pages);$('#add-next').hidden=!(sort==='binder'&&!hasFilters&&!norm(query)&&currentPage===pages);$('#cards').innerHTML=a.slice(start,start+pageSize).map(c=>`<article data-id="${c.id}"><div class="collection-heading"><span class="card-title">${colorSquare(cardColors(c))}<strong>${esc(c.name)}</strong>${finishBadge(c.type,c.id)}${trioSizes.has(c.id)?trioMark(trioSizes.get(c.id)):''}${c.relic?'<span class="relic-mark" title="Relique légendaire">✦</span>':''}${c.vestige?'<span class="vestige-mark" title="Vestige du Passé" aria-label="Vestige du Passé"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14M5 21h14M7 3v4l5 5-5 5v4M17 3v4l-5 5 5 5v4"/></svg></span>':''}</span><small class="binder-position">#${positions.get(c.id)}${collectionOriginIcon(c)}</small></div><div class="collection-details"><div><small>${esc(c.ref)} · ${esc(c.tcg)} · ${esc(setDisplay(c.tcg,c.set))}${validYear(c.year)?' · '+esc(setDate(c)):''}</small>${c.publisher?`<small>${esc(c.publisher)}</small>`:''}${illustratorCredit(c)}${anonymousGift(c)?'<small>Don anonyme</small>':''}${c.origin==='booster'&&c.boosterChooser?`<small>Booster choisi par ${esc(c.boosterChooser)}</small>`:''}</div><span class="muted" title="${esc(rarityFull(c.rarity))}">${esc(rarityShort(c.rarity))}</span><span>${esc(flags(c.lang))}</span><a class="google-search" href="https://www.google.com/search?q=${esc(encodeURIComponent(c.name+' '+c.ref))}" target="_blank" rel="noopener noreferrer" aria-label="Rechercher ${esc(c.name)} ${esc(c.ref)} sur Google" title="Rechercher sur Google"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a><span class="muted">›</span></div></article>`).join('')||'<p class="muted">Aucune carte.</p>';observeFinishShine($('#cards'));document.querySelectorAll('article').forEach(e=>e.onclick=event=>{if(event.target.closest('.google-search'))return;const card=state.cards.find(c=>c.id===+e.dataset.id);if(card&&!questTryCard(card))edit(card,{},collectionNavigationIds)});if(activeQuestAction&&page==='collection')questRenderAction()}
 function edit(c,carry={},navigationIds=null){if(!c&&rpgSanctionActive('add')){rpgNotice('ACCÈS REFUSÉ','Le Système interdit temporairement l’ajout de cartes.');return}let selected=cardColors(c||carry);let d=$('#editor');d.innerHTML=`<div class="row"><h2>${c?'Modifier':'Nouvelle carte'}</h2><button id="close">×</button></div>${c&&navigationIds?.includes(c.id)?`<div class="card-navigation"><button type="button" id="card-prev" aria-label="Carte précédente" ${navigationIds.indexOf(c.id)===0?'disabled':''}>‹</button><span>Carte ${navigationIds.indexOf(c.id)+1} sur ${navigationIds.length}</span><button type="button" id="card-next" aria-label="Carte suivante" ${navigationIds.indexOf(c.id)===navigationIds.length-1?'disabled':''}>›</button></div>`:''}<form id="form">${c?`<label>Exploration d’origine</label><select id="f-exploration"><option value="">Aucune</option>${exList().map(e=>`<option value="${e.id}" ${c.explorationId===e.id?'selected':''}>${esc(exTitle(e))}</option>`).join('')}</select>`:exActive()?`<p style="color:#ef4444">${esc(exTitle(exActive()))}</p>`:''}<label for="f-position">Position dans le binder</label><input id="f-position" type="number" inputmode="numeric" min="1" max="${state.cards.length+(c?0:1)}" step="1" required value="${c?state.cards.findIndex(y=>y.id===c.id)+1:state.cards.length+1}"><small>Les autres cartes se décalent automatiquement.</small>${['tcg','set','publisher','name','ref','rarity','type','lang','illustrator','notes'].map(k=>`<label for="f-${k}">${fields[k]}</label>${k==='illustrator'?'<div class="illustrator-field">':''}${k==='notes'?`<textarea id="f-${k}">${esc(c?.[k]||'')}</textarea>`:`<input id="f-${k}" autocomplete="off" ${k==='name'||k==='ref'?'required':''} value="${esc(c?.[k]??carry[k]??'')}">${k==='illustrator'?'<a id="illustrator-search" class="google-search" target="_blank" rel="noopener noreferrer" aria-label="Rechercher l’illustrateur sur Google (nouvel onglet)" title="Rechercher l’illustrateur sur Google"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a></div>':''}${k==='illustrator'?`<label class="illustrator-uncredited-option"><input type="checkbox" id="f-illustrator-uncredited" ${c?.illustratorUncredited===true?'checked':''}> Aucun crédit indiqué</label>`:''}${keys.includes(k)?`<div class="choices" id="choices-${k}"></div>`:''}${k==='ref'?'<div role="status"><div class="card-match" id="card-match" hidden><strong></strong><small></small></div></div>':''}`}`).join('')}<label for="f-year">Année de sortie (facultative)</label><input id="f-year" type="number" min="1800" max="9999" step="1" value="${esc(c?.year||'')}"><label for="f-month">Mois de sortie du set (facultatif)</label><select id="f-month"><option value="">Mois inconnu</option>${Array.from({length:12},(_,i)=>`<option value="${i+1}" ${Number(c?.month)===i+1?'selected':''}>${monthText(i+1)}</option>`).join('')}</select><label for="f-origin">Comment cette carte est-elle arrivée jusqu’à vous ?</label><select id="f-origin"><option value="">Non renseigné</option>${Object.entries(originLabels).map(([k,v])=>`<option value="${k}" ${c?.origin===k?'selected':''}>${v}</option>`).join('')}</select><label id="anonymous-gift-wrap" class="relic-check" hidden><input type="checkbox" id="f-anonymous-gift" ${anonymousGift(c)?'checked':''}> Don anonyme</label><div id="donor-wrap" hidden><label for="f-donor">Offerte par</label><input id="f-donor" autocomplete="off" value="${esc(c?.donor||'')}"><div class="choices" id="donor-choices"></div></div><div id="chooser-wrap" ${c?.origin==='booster'?'':'hidden'}><label class="relic-check" style="color:#bbb"><input type="checkbox" id="f-tournament-booster" ${isTournamentBooster(c)?'checked':''}> Booster gagné en tournoi</label><label for="f-chooser">Qui a choisi le booster ?</label><input id="f-chooser" autocomplete="off" value="${esc(c?.boosterChooser||'')}" placeholder="Nom du compagnon (facultatif)"><div class="choices" id="chooser-choices"></div><small>Un compagnon a peut-être guidé le destin de cette découverte.</small></div><div id="shop-wrap" ${['booster','bulk','purchase'].includes(c?.origin)?'':'hidden'}><label for="f-shop">Échoppe (facultatif)</label><input id="f-shop" autocomplete="off" value="${esc(c?.shop||'')}" placeholder="Boutique ou vendeur"><div class="choices" id="shop-choices"></div></div><div id="arrival-note-wrap" hidden><label for="f-arrival-note">Raison de son arrivée dans l’Expédition (facultatif)</label><textarea id="f-arrival-note"></textarea></div><label>Couleur de la carte (2 maximum)</label><div id="cardColors" class="color-choices"></div><label class="relic-check" style="color:#bbb"><input type="checkbox" id="f-tcc" ${c?.tcc===true?'checked':''}> TCC (carte de collection uniquement)</label><label class="relic-check" title="Carte possédée au moins 10 ans avant la création de Binder 33"><input type="checkbox" id="f-vestige" ${c?.vestige===true?'checked':''}> Vestige du Passé</label><small>Carte possédée au moins dix ans avant la création du Binder. Aucun objectif ni XP.</small><label class="relic-check"><input type="checkbox" id="f-relic" ${c?.relic?'checked':''}> Relique légendaire</label><div id="relic-story-wrap" ${c?.relic?'':'hidden'}><label for="f-relic-story">Histoire de la relique (facultatif)</label><textarea id="f-relic-story">${esc(c?.relicStory||'')}</textarea></div><p id="error" class="danger"></p><button class="primary" type="submit">Enregistrer</button> ${!c?'<button type="button" id="more">Enregistrer + autre</button>':'<button type="button" class="danger" id="delete">Supprimer</button>'}</form>`;$('#f-relic').onchange=()=>{$('#relic-story-wrap').hidden=!$('#f-relic').checked};const anonymousInput=$('#f-anonymous-gift');
 function syncGiftFields(){
  const gift=$('#f-origin').value==='gift';
@@ -977,7 +1168,7 @@ const rarityInput=$('#f-rarity');const rarityHint=document.createElement('small'
   return;
  }
  x.donor=existing||n;
-}if(x.origin==='booster'){let n=chooserInput.value.trim();const existing=donorNames().find(v=>norm(v)===norm(n));if(!existing&&reservedCompanion(n)){$('#error').textContent='Indiquez le nom d’un compagnon.';return}x.boosterChooser=existing||n;}Object.keys(fields).forEach(k=>x[k]=$('#f-'+k).value.trim());x.illustratorUncredited=$('#f-illustrator-uncredited').checked;if(x.illustratorUncredited)x.illustrator='';if(!x.name||!x.ref||keys.some(k=>!optionalCardLists.has(k)&&!x[k])){$('#error').textContent='Renseigne tous les champs sauf Éditeur, Illustrateur et Notes.';return}keys.forEach(k=>{x[k]=cardReferenceValue(k,x[k],x.tcg)});let dup=duplicate(x);if(dup){$('#error').textContent='Cette carte est déjà dans ton Binder : '+dup.name;return}registerTcg(x.tcg);const possibleFamily=!c&&!options('set').some(n=>norm(n)===norm(x.set))?setFamilySuggestion(x.tcg,x.set):null;if(possibleFamily&&confirm('Le set « '+x.set+' » semble correspondre à « '+possibleFamily.name+' ».\nLe rattacher à ce regroupement ?')){possibleFamily.members.push(x.set);state.setOwners=state.setOwners||{};state.setOwners[x.set]=x.tcg}keys.forEach(k=>{if(x[k]&&!state.lists[k].includes(x[k]))state.lists[k].push(x[k])});if(x.shop){state.shopNames=shopNames();if(!state.shopNames.some(n=>norm(n)===norm(x.shop)))state.shopNames.push(x.shop)}if(x.donor){state.donorNames=donorNames();if(!state.donorNames.includes(x.donor))state.donorNames.push(x.donor)}const ultimate=!c&&trioGroups(state.cards).some(g=>g.length===3&&trioKey(g[0])===trioKey(x))&&trioGroups([...state.cards,x]).some(g=>g.length>=4&&trioKey(g[0])===trioKey(x));if(c){x.explorationId=Number($('#f-exploration').value)||null;state.cards=state.cards.filter(y=>y.id!==c.id);}else state.nextId++;state.cards.splice(position-1,0,x);if(yearManual)learnReleaseDate(x);if(!c){const ex=exActive();if(ex)x.explorationId=ex.id;}if(!c)journalAcquisition(x);if(x.vestige&&!c?.vestige){journalInit();journalAdd('vestige',{cardId:x.id,name:x.name,ref:x.ref,tcg:x.tcg});}else if(c?.vestige&&!x.vestige){state.journal.entries=state.journal.entries.filter(e=>!(e.kind==='vestige'&&e.cardId===x.id));}if(c)for(const e of state.journal.entries)if(e.kind==='acquisitions')for(const j of e.cards||[])if(j.id===x.id){j.boosterChooser=x.boosterChooser;if(c.origin!==x.origin||norm(c.donor)!==norm(x.donor)){j.origin=x.origin;j.donor=x.donor}};if(x.boosterChooser){state.donorNames=donorNames();}companionArrivalSync();const arrivalName=companionArrivalName(x),arrivalNote=$('#f-arrival-note').value.trim();if(arrivalName&&arrivalNote&&!$('#arrival-note-wrap').hidden){const arrival=state.journal.entries.find(e=>e.kind==='companion-arrival'&&norm(e.name)===norm(arrivalName));if(arrival&&!arrival.note)arrival.note=arrivalNote;}state.binderOrderVersion=1;save();if(!c)archivePending++;if(state.rpg?.awake){rpgWeeklySync();rpgMonthlySync(null)}render();if(more)edit(null,{...Object.fromEntries(keys.filter(k=>!optionalCardLists.has(k)).map(k=>[k,x[k]])),colors:x.colors});else d.close();if(!c)archiveAnimation(ultimate)}$('#form').onsubmit=e=>{e.preventDefault();commit(false)};if(c&&navigationIds?.includes(c.id)){const snapshot=()=>JSON.stringify({fields:[...d.querySelectorAll('#form input,#form select,#form textarea')].map(el=>[el.id,el.type==='checkbox'?el.checked:el.value]),colors:selected});const initial=snapshot();const move=delta=>{const i=navigationIds.indexOf(c.id),next=state.cards.find(card=>card.id===navigationIds[i+delta]);if(!next)return;const proceed=()=>{edit(next,{},navigationIds);d.scrollTop=0};if(snapshot()===initial){proceed();return}if(confirm('Des modifications ne sont pas enregistrées.\nOK : enregistrer avant de changer de carte.\nAnnuler : autres options.')){d.querySelector('#form').requestSubmit();if(!d.open)proceed();return}if(confirm('Ignorer les modifications et passer à la carte suivante ?\nOK : ignorer.\nAnnuler : rester sur cette carte.'))proceed()};const prev=d.querySelector('#card-prev'),next=d.querySelector('#card-next');if(prev)prev.onclick=()=>move(-1);if(next)next.onclick=()=>move(1)};if(c)$('#delete').onclick=()=>{let q=$('#deleteConfirm');q.innerHTML=`<h2 id="deleteTitle">Supprimer cette carte ?</h2><p>${esc(c.name)}</p><small>${esc(c.ref)} · ${esc(c.tcg)}</small><p>Cette action est définitive. Tes exploits déjà débloqués seront conservés.</p><div class="delete-actions"><button id="cancelDelete" autofocus>Annuler</button><button id="confirmDelete" class="confirm-danger">Supprimer</button></div>`;q.showModal();$('#cancelDelete').onclick=()=>q.close();$('#confirmDelete').onclick=()=>{state.cards=state.cards.filter(x=>x.id!==c.id);save();q.close();d.close();render()}};else $('#more').onclick=()=>commit(true)}
+}if(x.origin==='booster'){let n=chooserInput.value.trim();const existing=donorNames().find(v=>norm(v)===norm(n));if(!existing&&reservedCompanion(n)){$('#error').textContent='Indiquez le nom d’un compagnon.';return}x.boosterChooser=existing||n;}Object.keys(fields).forEach(k=>x[k]=$('#f-'+k).value.trim());x.illustratorUncredited=$('#f-illustrator-uncredited').checked;if(x.illustratorUncredited)x.illustrator='';if(!x.name||!x.ref||keys.some(k=>!optionalCardLists.has(k)&&!x[k])){$('#error').textContent='Renseigne tous les champs sauf Éditeur, Illustrateur et Notes.';return}keys.forEach(k=>{x[k]=cardReferenceValue(k,x[k],x.tcg)});let dup=duplicate(x);if(dup){$('#error').textContent='Cette carte est déjà dans ton Binder : '+dup.name;return}registerTcg(x.tcg);const possibleFamily=!c&&!options('set').some(n=>norm(n)===norm(x.set))?setFamilySuggestion(x.tcg,x.set):null;if(possibleFamily&&confirm('Le set « '+x.set+' » semble correspondre à « '+possibleFamily.name+' ».\nLe rattacher à ce regroupement ?')){possibleFamily.members.push(x.set);state.setOwners=state.setOwners||{};state.setOwners[x.set]=x.tcg}keys.forEach(k=>{if(x[k]&&!state.lists[k].includes(x[k]))state.lists[k].push(x[k])});if(x.shop){state.shopNames=shopNames();if(!state.shopNames.some(n=>norm(n)===norm(x.shop)))state.shopNames.push(x.shop)}if(x.donor){state.donorNames=donorNames();if(!state.donorNames.includes(x.donor))state.donorNames.push(x.donor)}const priorTrio=!c?trioRows(state.cards):[];let ultimate=false;if(c){x.explorationId=Number($('#f-exploration').value)||null;state.cards=state.cards.filter(y=>y.id!==c.id);}else state.nextId++;state.cards.splice(position-1,0,x);if(!c){const after=trioRows(state.cards).find(row=>row.cards.includes(x));ultimate=after?.cards.length===4&&priorTrio.some(row=>row.cards.length===3&&row.cards.every(card=>after.cards.includes(card)));syncTrioMembership()}if(yearManual)learnReleaseDate(x);if(!c){const ex=exActive();if(ex)x.explorationId=ex.id;}if(!c)journalAcquisition(x);if(x.vestige&&!c?.vestige){journalInit();journalAdd('vestige',{cardId:x.id,name:x.name,ref:x.ref,tcg:x.tcg});}else if(c?.vestige&&!x.vestige){state.journal.entries=state.journal.entries.filter(e=>!(e.kind==='vestige'&&e.cardId===x.id));}if(c)for(const e of state.journal.entries)if(e.kind==='acquisitions')for(const j of e.cards||[])if(j.id===x.id){j.boosterChooser=x.boosterChooser;if(c.origin!==x.origin||norm(c.donor)!==norm(x.donor)){j.origin=x.origin;j.donor=x.donor}};if(x.boosterChooser){state.donorNames=donorNames();}companionArrivalSync();const arrivalName=companionArrivalName(x),arrivalNote=$('#f-arrival-note').value.trim();if(arrivalName&&arrivalNote&&!$('#arrival-note-wrap').hidden){const arrival=state.journal.entries.find(e=>e.kind==='companion-arrival'&&norm(e.name)===norm(arrivalName));if(arrival&&!arrival.note)arrival.note=arrivalNote;}state.binderOrderVersion=1;save();if(!c)archivePending++;if(state.rpg?.awake){rpgWeeklySync();rpgMonthlySync(null)}render();if(more)edit(null,{...Object.fromEntries(keys.filter(k=>!optionalCardLists.has(k)).map(k=>[k,x[k]])),colors:x.colors});else d.close();if(!c)archiveAnimation(ultimate)}$('#form').onsubmit=e=>{e.preventDefault();commit(false)};if(c&&navigationIds?.includes(c.id)){const snapshot=()=>JSON.stringify({fields:[...d.querySelectorAll('#form input,#form select,#form textarea')].map(el=>[el.id,el.type==='checkbox'?el.checked:el.value]),colors:selected});const initial=snapshot();const move=delta=>{const i=navigationIds.indexOf(c.id),next=state.cards.find(card=>card.id===navigationIds[i+delta]);if(!next)return;const proceed=()=>{edit(next,{},navigationIds);d.scrollTop=0};if(snapshot()===initial){proceed();return}if(confirm('Des modifications ne sont pas enregistrées.\nOK : enregistrer avant de changer de carte.\nAnnuler : autres options.')){d.querySelector('#form').requestSubmit();if(!d.open)proceed();return}if(confirm('Ignorer les modifications et passer à la carte suivante ?\nOK : ignorer.\nAnnuler : rester sur cette carte.'))proceed()};const prev=d.querySelector('#card-prev'),next=d.querySelector('#card-next');if(prev)prev.onclick=()=>move(-1);if(next)next.onclick=()=>move(1)};if(c)$('#delete').onclick=()=>{let q=$('#deleteConfirm');q.innerHTML=`<h2 id="deleteTitle">Supprimer cette carte ?</h2><p>${esc(c.name)}</p><small>${esc(c.ref)} · ${esc(c.tcg)}</small><p>Cette action est définitive. Tes exploits déjà débloqués seront conservés.</p><div class="delete-actions"><button id="cancelDelete" autofocus>Annuler</button><button id="confirmDelete" class="confirm-danger">Supprimer</button></div>`;q.showModal();$('#cancelDelete').onclick=()=>q.close();$('#confirmDelete').onclick=()=>{state.cards=state.cards.filter(x=>x.id!==c.id);save();q.close();d.close();render()}};else $('#more').onclick=()=>commit(true)}
 function updateCapsule(){const month=journalDay().slice(0,7);state.capsules=state.capsules||{};const counts=k=>k==='tcg'?tcgCounts(state.cards):Object.entries(state.cards.reduce((m,c)=>{if(c[k]){let v=k==='rarity'?rarityLabel(rarityKey(c[k])):c[k];m[v]=(m[v]||0)+1;}return m},Object.create(null)));const snap={month,at:new Date().toISOString(),cards:state.cards.length,tcg:counts('tcg'),rarity:counts('rarity'),colors:colorNames.map(k=>[k,state.cards.filter(c=>k==='Sans'?!cardColors(c).length:cardColors(c).includes(k)).length]).filter(x=>x[1]),donors:contributorCounts(),earned:state.achievements.length,title:collectorTitles[state.collectorTitle]||''};state.capsules[month]=snap;save()}
 let capsuleIndex=0,capsuleExpanded=false;
 function capsulePanel(){const all=Object.values(state.capsules||{}).sort((a,b)=>b.month.localeCompare(a.month));if(!all.length)return '';capsuleIndex=Math.min(capsuleIndex,all.length-1);const c=all[capsuleIndex],prev=all[capsuleIndex+1],live=c.month===journalDay().slice(0,7),label=new Date(c.month+'-01T12:00:00').toLocaleDateString('fr-FR',{month:'long',year:'numeric'}),top=a=>[...(a||[])].sort((x,y)=>y[1]-x[1])[0]?.[0]||'—';const metric=(n,l)=>`<div class="capmetric"><strong>${esc(String(n))}</strong><small>${l}</small></div>`;return `<details class="stat-panel stat-fold capsule-journal" style="margin:12px 0"><summary><span><span class="capsule-journal-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.7-6.4L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg>Capsules temporelles</span><small>${all.filter(x=>x.month!==journalDay().slice(0,7)).length} capsule${all.filter(x=>x.month!==journalDay().slice(0,7)).length>1?"s scellées":" scellée"}</small></span></summary><div class="capcard"><div class="capnav"><button onclick="capsuleIndex=Math.min(capsuleIndex+1,${all.length-1});refreshCapsule()" ${capsuleIndex===all.length-1?'disabled':''} aria-label="Mois précédent">‹</button><div><small>CAPSULE N° ${String(all.length-capsuleIndex).padStart(2,'0')}</small><h3>${esc(label)}</h3></div><button onclick="capsuleIndex=Math.max(0,capsuleIndex-1);refreshCapsule()" ${capsuleIndex===0?'disabled':''} aria-label="Mois suivant">›</button></div><div class="capstatus">${live?'En cours d’écriture':'Scellée'}</div><div class="caphero"><strong>${c.cards}</strong><small>Cartes dans le binder</small></div><div class="capgrid">${metric(c.tcg.length,'TCG')}${metric(c.earned,'Exploits')}${metric(Math.floor(c.cards/12),'Pages remplies')}</div><p class="captitle">${esc(c.title||'Aucun titre')}</p><button class="capdetail" onclick="capsuleExpanded=!capsuleExpanded;refreshCapsule()">${capsuleExpanded?'Masquer le bilan':'Ouvrir le bilan détaillé'}</button>${capsuleExpanded?`<div class="capreport"><div class="capgrid">${metric(top(c.tcg),'TCG dominant')}${metric(top(c.colors),'Couleur dominante')}</div>${prev?`<div class="capcompare"><strong>Évolution depuis ${esc(prev.month)}</strong>${[['Cartes',c.cards,prev.cards],['TCG',c.tcg.length,prev.tcg.length],['Exploits',c.earned,prev.earned]].map(([n,v,w])=>`<div>${n}<span>${w} → ${v} (${v-w>=0?'+':''}${v-w})</span></div>`).join('')}</div>`:'<p class="muted">Premier souvenir enregistré.</p>'}${[['TCG',c.tcg],['Couleurs',c.colors],['Raretés',c.rarity],['Contributeurs',c.donors]].map(([k,a])=>`<div class="capcompare"><strong>${k}</strong>${(a||[]).map(([n,v])=>`<div>${esc(n)}<span>${v}</span></div>`).join('')||'<p>—</p>'}</div>`).join('')}</div>`:''}</div></details>`}
@@ -1822,7 +2013,7 @@ function bindBackupV2(){
   importInput.value='';
   importStatus.textContent=file.name;
   importStatus.hidden=false;
-  try{let s=JSON.parse(await file.text());if(!Array.isArray(s.cards)||!s.lists||!s.flags||!Number.isInteger(s.nextId)||!keys.filter(k=>!optionalCardLists.has(k)).every(k=>Array.isArray(s.lists[k]))||!s.cards.every(c=>Number.isInteger(c.id)&&Object.keys(fields).every(k=>optionalCardLists.has(k)?(c[k]==null||typeof c[k]==='string'):typeof c[k]==='string')))throw Error();if(confirm('Remplacer la collection actuelle ?')){const protectedUrgent=state.rpg?.urgent;const protectedRpg=state.rpg;if(protectedRpg?.awake){const importedRpg=s.rpg;if(!importedRpg?.awake){s.rpg=structuredClone(protectedRpg)}else{const guarded=protectedUrgent&&(['pending','quiz'].includes(protectedUrgent.status)||protectedUrgent.sanction?.until>Date.now());if(guarded)s.rpg.urgent=structuredClone(protectedUrgent);s.rpg.urgentDraws={...(importedRpg.urgentDraws||{}),...(protectedRpg.urgentDraws||{})};s.rpg.awake=protectedRpg.awake;s.rpg.bonus=Math.max(Number(importedRpg.bonus)||0,Number(protectedRpg.bonus)||0);s.rpg.questArchive=[...(importedRpg.questArchive||[]),...(protectedRpg.questArchive||[])].filter((x,i,arr)=>arr.findIndex(y=>y.type===x.type&&y.quest?.period===x.quest?.period)===i)}}state=s;achievementReady=false;normalizeOrder();save();render()}}catch{alert('Sauvegarde invalide.')}
+  try{let s=JSON.parse(await file.text());if(!Array.isArray(s.cards)||!s.lists||!s.flags||!Number.isInteger(s.nextId)||!validTrioReviews(s.trioReviews)||!keys.filter(k=>!optionalCardLists.has(k)).every(k=>Array.isArray(s.lists[k]))||!s.cards.every(c=>Number.isInteger(c.id)&&Object.keys(fields).every(k=>optionalCardLists.has(k)?(c[k]==null||typeof c[k]==='string'):typeof c[k]==='string')))throw Error();if(confirm('Remplacer la collection actuelle ?')){const protectedUrgent=state.rpg?.urgent;const protectedRpg=state.rpg;if(protectedRpg?.awake){const importedRpg=s.rpg;if(!importedRpg?.awake){s.rpg=structuredClone(protectedRpg)}else{const guarded=protectedUrgent&&(['pending','quiz'].includes(protectedUrgent.status)||protectedUrgent.sanction?.until>Date.now());if(guarded)s.rpg.urgent=structuredClone(protectedUrgent);s.rpg.urgentDraws={...(importedRpg.urgentDraws||{}),...(protectedRpg.urgentDraws||{})};s.rpg.awake=protectedRpg.awake;s.rpg.bonus=Math.max(Number(importedRpg.bonus)||0,Number(protectedRpg.bonus)||0);s.rpg.questArchive=[...(importedRpg.questArchive||[]),...(protectedRpg.questArchive||[])].filter((x,i,arr)=>arr.findIndex(y=>y.type===x.type&&y.quest?.period===x.quest?.period)===i)}}const reviewsChanged=JSON.stringify(state.trioReviews||[])!==JSON.stringify(s.trioReviews||[]);state=s;achievementReady=false;normalizeOrder();if(reviewsChanged)refreshTrioQuestQuestions();save();render()}}catch{alert('Sauvegarde invalide.')}
  };
 }
 
@@ -1997,6 +2188,88 @@ const shopAchievements=[
 ];
 for(const [id,name,t,goal,desc,check,secret=false] of shopAchievements){achievements.push({id,name,t,goal,desc,secret,hideSecretProgress:secret});achievementChecks.push(check)}
 
+const trioAchievementIds=new Set(['a26',...trioDefs.map(([id])=>id)]);
+function trioAchievementProgress(id,rows){
+ const trios=rows.filter(row=>row.cards.length>=3);
+ if(id==='trioUltimate'||id==='trioSecret1')return trios.filter(row=>row.cards.length>=4).length;
+ if(id==='trioSecret2')return new Set(trios.map(row=>norm(row.cards[0].tcg))).size;
+ return trios.length;
+}
+function trioHistory(){
+ const cards=new Map(state.cards.map(card=>[card.id,card]));
+ const at=new Map();
+ for(const entry of state.journal.entries){
+  if(entry.kind!=='acquisitions')continue;
+  for(const card of entry.cards||[]){
+   if(!Number.isInteger(card.id))continue;
+   const date=Date.parse(card.at||entry.at||entry.day);
+   if(Number.isFinite(date))at.set(card.id,date);
+   if(!cards.has(card.id))cards.set(card.id,card);
+  }
+ }
+ const ordered=[...cards.values()].sort((a,b)=>a.id-b.id);
+ return {
+  before:stamp=>ordered.filter(card=>!at.has(card.id)||at.get(card.id)<=stamp),
+  stamps:[...new Set(at.values())].sort((a,b)=>a-b)
+ };
+}
+function isAchievementEntry(entry,achievement){
+ return entry.kind==='achievement'&&(entry.achievementId===achievement.id||entry.name===achievement.name);
+}
+function reconcileTrioAchievements(previousReviews){
+ const current=trioRows(state.cards);
+ const previous=trioRows(state.cards,previousReviews);
+ const history=trioHistory();
+ const relocked=new Set();
+ const corrections=state.trioAchievementCorrections||={};
+ for(const achievement of achievements.filter(a=>trioAchievementIds.has(a.id))){
+  const {id,goal}=achievement;
+  const before=trioAchievementProgress(id,previous);
+  const after=trioAchievementProgress(id,current);
+  const entries=state.journal.entries.filter(entry=>isAchievementEntry(entry,achievement));
+  for(const entry of entries){
+   const stamp=Date.parse(entry.at||entry.day);
+   if(!Number.isFinite(stamp))continue;
+   const cards=history.before(stamp);
+   const historicalBefore=trioAchievementProgress(id,trioRows(cards,previousReviews));
+   const historicalAfter=trioAchievementProgress(id,trioRows(cards));
+   if(historicalBefore>=goal&&historicalAfter<goal){
+    corrections[id]??=[];
+    corrections[id].push(entry);
+    state.journal.entries=state.journal.entries.filter(item=>item!==entry);
+   }
+  }
+  const dated=state.journal.entries.some(entry=>isAchievementEntry(entry,achievement));
+  if(!dated&&after<goal&&(before>=goal||corrections[id]?.length)&&state.achievements.includes(id)){
+   corrections[id]??=[];
+   state.achievements=state.achievements.filter(value=>value!==id);
+   relocked.add(id);
+  }
+  if(after>=goal&&!dated&&Object.hasOwn(corrections,id))restoreTrioAchievementEntry(achievement,history);
+ }
+ return relocked;
+}
+function restoreTrioAchievementEntry(achievement,history=trioHistory()){
+ const {id,goal,name,secret,t}=achievement;
+ const archive=state.trioAchievementCorrections?.[id]||[];
+ const reached=stamp=>trioAchievementProgress(id,trioRows(history.before(stamp)))>=goal;
+ const restored=[...archive].sort((a,b)=>Date.parse(a.at||a.day)-Date.parse(b.at||b.day)).find(e=>reached(Date.parse(e.at||e.day)));
+ if(restored){
+  state.journal.entries.push(restored);
+  state.trioAchievementCorrections[id]=archive.filter(entry=>entry!==restored);
+  return;
+ }
+ // Only date a corrected event from dated acquisitions that actually completed it.
+ const stamp=history.stamps.find(date=>!reached(date-1)&&reached(date));
+ if(stamp===undefined&&!archive.length)return;
+ const event=journalAdd('achievement',{achievementId:id,name,secret,t});
+ if(stamp!==undefined){
+  const date=new Date(stamp);
+  event.at=date.toISOString();
+  event.day=[date.getFullYear(),String(date.getMonth()+1).padStart(2,'0'),String(date.getDate()).padStart(2,'0')].join('-');
+ }
+}
+
 function checkAchievements(){
  const cards=state.cards;
  state.achievements=Array.isArray(state.achievements)?state.achievements:[];
@@ -2006,7 +2279,10 @@ function checkAchievements(){
  achievements.forEach((a,i)=>{
    if(state.achievements.includes(a.id)||achievementChecks[i](cards)<a.goal)return;
    state.achievements.push(a.id);
-   if(!restoring&&!historical.has(a.id)&&!historical.has(a.name))fresh.push(a);
+   if(historical.has(a.id)||historical.has(a.name))return;
+   if(Object.hasOwn(state.trioAchievementCorrections||{},a.id)){
+    restoreTrioAchievementEntry(a);
+   }else if(!restoring)fresh.push(a);
  });
  for(const a of fresh)journalAdd('achievement',{achievementId:a.id,name:a.name,secret:a.secret,t:a.t});
  if(fresh.length){
@@ -2704,7 +2980,7 @@ function binderQuizBank() {
     ['Combien de TCG sont représentés dans votre collection ?',distinctCount('tcg')],
     ['Combien de langues sont représentées dans votre collection ?',distinctCount('lang')],
     ['Combien de cartes compte votre collection ?',state.cards.length],
-    ['Combien de Trios sont recensés dans votre collection ?',trioGroups(state.cards).length]
+    [trioCountQuestion,trioGroups(state.cards).length]
   ]) {
     if(state.cards.length) add(question,count,questShuffle([count-2,count-1,count+1,count+2].filter(n=>n>=0)),2,undefined,'count');
   }
@@ -2964,6 +3240,47 @@ function openBinderQuiz(companion) {
   dialog.addEventListener('close',()=>{clearTimeout(feedbackTimer);dialog.remove();render();rpgResume()});
   document.body.append(dialog);
   dialog.showModal();
+}
+
+const trioCountQuestion='Combien de Trios sont recensés dans votre collection ?';
+function refreshTrioQuestQuestions(){
+ const rpg=state.rpg;
+ if(!rpg)return;
+ const pending=[];
+ for(const quest of Object.values(rpg.quests||{})){
+  if(quest.done||quest.failed)continue;
+  if(quest.kind==='cycle'){
+   for(const task of quest.tasks||[]){
+    if(task.kind==='quiz'&&!task.done&&!task.failed)pending.push([task.questions,task.progress]);
+   }
+  }else if(Array.isArray(quest.qs))pending.push([quest.qs,quest.index]);
+ }
+ if(rpg.urgent?.status==='quiz')pending.push([rpg.urgent.questions,rpg.urgent.index]);
+ const isTrio=q=>q?.text===trioCountQuestion||q?.presentation?.prompt==='Quelle carte complète ce Trio ?';
+ if(!pending.some(([questions,start])=>questions?.slice(start||0).some(isTrio)))return;
+ const bank=binderQuizBank();
+ const newCount=bank.find(q=>q.text===trioCountQuestion);
+ const labels=trioGroups(state.cards.filter(card=>!card.vestige))
+  .map(group=>new Set(group.map(questCardLabel)));
+ const stillValid=question=>{
+  const anchors=(question.presentation?.subjectCards||[])
+   .map(card=>[card.name,card.ref,card.context].filter(Boolean).join(' · '));
+  return labels.some(group=>anchors.length===2&&anchors.every(label=>group.has(label))&&
+   group.has(question.answer)&&question.options.filter(option=>group.has(option)).length===1);
+ };
+ for(const [questions,start] of pending){
+  const used=new Set((questions||[]).map(q=>q.text));
+  const alternatives=bank.filter(q=>!isTrio(q)&&!used.has(q.text));
+  for(let i=start||0;i<(questions?.length||0);i++){
+   const q=questions[i];
+   if(!isTrio(q))continue;
+   if(q.text===trioCountQuestion){
+    if(q.answer===newCount?.answer)continue;
+    if(newCount){questions[i]=newCount;continue}
+   }else if(stillValid(q))continue;
+   questions[i]=alternatives.shift()||bank.find(q=>!isTrio(q));
+  }
+ }
 }
 
 function questQuiz(count) {
