@@ -311,6 +311,28 @@ article small.illustrator-uncredited{color:#999;font-style:italic}
 .rpg-panel.rpg-quest-card.rpg-quest-complete {
   padding-block:14px;
 }
+.rpg-panel.rpg-quest-card.rpg-quest-waiting {
+  opacity:1;
+  border-color:#26464d;
+  border-inline-start-color:#327c7a;
+}
+.rpg-quest-waiting > .rpg-quest-card-heading,
+.rpg-quest-waiting > h3 {opacity:.48}
+.rpg-quest-next {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+  padding:10px 12px;
+  border:1px solid #367b80;
+  border-radius:10px;
+  background:#19363d;
+  color:#e4f6f5;
+  font-size:14px;
+}
+.rpg-quest-next svg {flex:none;color:#48e2d1}
+.rpg-quest-next-label {display:block;font-weight:650}
+.rpg-quest-next time {color:#48e2d1;font-weight:750;white-space:nowrap}
 .rpg-quest-month-summary {
   margin-top:12px;
   padding-top:10px;
@@ -437,8 +459,8 @@ article small.illustrator-uncredited{color:#999;font-style:italic}
 #companion-erasure p{line-height:1.55}
 </style></head><body><main><header>BINDER<em>33/</em> <span class="app-version"></span><div id="collector-title" hidden></div></header><div id="view"></div></main><nav><button data-page="collection"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg><span>Collection</span></button><button data-page="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/></svg><span>Stats</span></button><button data-page="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 4 4M16 5h4v3a4 4 0 0 1-4 4M12 14v6M8 21h8"/></svg><span>Exploits</span></button><button data-page="journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6C9 3 5 3 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-3-2-7-2-10 1v15"/></svg><span>Journal</span></button><button data-page="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="7"/></svg><span>Réglages</span></button></nav><dialog id="editor"></dialog><dialog id="companion-erasure" aria-labelledby="erasure-title"></dialog><dialog id="deleteConfirm" aria-labelledby="deleteTitle"></dialog><dialog id="memory-dialog" class="memory-dialog" aria-label="Le Souvenir oublié"></dialog><script>
 // Single public version after the System awakening.
-const binderRelease = '2.9.10';
-const binderDevelopmentCount = 287;
+const binderRelease = '2.9.11';
+const binderDevelopmentCount = 288;
 function binderVersion() { return binderRelease; }
 const fields={ref:'Référence',name:'Nom',rarity:'Rareté',type:'Type',tcg:'TCG',publisher:'Éditeur',illustrator:'Illustrateur',set:'Set',lang:'Langue',notes:'Notes'}, keys=['tcg','set','rarity','type','lang','publisher','illustrator'];const optionalCardLists=new Set(['publisher','illustrator']);let state,page='collection',query='',sort='binder',filters={},currentPage=1,pageSize=33;const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])), norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim(), ordered=a=>[...new Set(a)].sort((a,b)=>a.localeCompare(b,'fr',{numeric:true,sensitivity:'base'}));const binderStorageKey='binder33-v1';
 let savedBinderState;
@@ -3162,7 +3184,7 @@ function questTaskText(task) {
     case 'calls': return 'Répondez à l’Appel du Système lors de '+task.target+' jours distincts.';
   }
 }
-function questCardHeader(cadence,label,name,done) {
+function questCardHeader(cadence,label,name,done,available=false) {
   const shape={
     daily:'<path d="M3 19h18M6 16a6 6 0 0 1 12 0M12 3v3M4.2 7.2l2 2M19.8 7.2l-2 2M2 14h2m16 0h2"/>',
     weekly:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-14 4h2m3 0h2m3 0h1M7 17h2m3 0h2"/>',
@@ -3172,7 +3194,7 @@ function questCardHeader(cadence,label,name,done) {
     <span class="rpg-quest-card-kind"><span class="rpg-quest-card-icon">
       <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${shape}</svg>
     </span><span>Quête ${esc(label.toLocaleLowerCase('fr'))}</span></span>
-    ${done?'<span class="rpg-quest-card-status"><span aria-hidden="true">✓</span> Accomplie</span>':''}
+    ${done?'<span class="rpg-quest-card-status"><span aria-hidden="true">✓</span> Accomplie</span>':available?'<span class="rpg-quest-card-status">Disponible</span>':''}
   </div><h3>${esc(name)}</h3>`;
 }
 
@@ -3208,18 +3230,30 @@ function questMonthlySummary(quest) {
     completed.map(step=>'<li>'+esc(step)+'</li>').join('')+'</ol></div>';
 }
 
+function dailyQuestNextPanel(quest) {
+  const unlock=dailyQuestUnlock(quest);
+  const next=unlock?new Date(unlock):new Date(quest.period+'T09:00:00');
+  if(!unlock) next.setDate(next.getDate()+1);
+  const tomorrow=next.toDateString()!==new Date().toDateString();
+  const hours=next.getHours();
+  const minutes=next.getMinutes();
+  const time=hours+' h'+(minutes?' '+String(minutes).padStart(2,'0'):'');
+  return `<div class="rpg-quest-next">
+    <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    <div><span class="rpg-quest-next-label">Prochaine quête journalière</span>Disponible ${tomorrow?'demain ':''}à <time datetime="${next.toISOString()}">${time}</time></div>
+  </div>`;
+}
+
 function questCyclePanel(quest,label) {
   const cadence=quest.cadence;
   const name={daily:{fragments:'Chasse aux fragments',search:'Recherche d’une carte',quiz:'Quiz des archives',endlessQuiz:'Défi du Quiz du Binder 33',cards:'Ajout à l’Expédition'}[quest.family],weekly:'Les repères de la semaine',monthly:'Les Sentiers de l’Expédition'}[cadence];
   const day=rpgPeriod('daily');
   const progress=quest.tasks.filter(task=>task.done).length;
-  const header='<section class="rpg-panel rpg-quest-card'+(quest.done?' rpg-quest-complete':'')+'">'+questCardHeader(cadence,label,name,quest.done);
-  if(quest.done) {
-    const unlock=cadence==='daily'?dailyQuestUnlock(quest):0;
-    const time=unlock?new Date(unlock).toLocaleTimeString('fr-FR',{hour:'numeric',minute:'2-digit'}):'';
-    const next=time?'<p>Prochaine quête à '+time.replace(':',' h ')+'</p>':'';
-    return header+next+(cadence==='monthly'?questMonthlySummary(quest):'')+'</section>';
-  }
+  const waiting=cadence==='daily'&&quest.done;
+  const available=cadence==='daily'&&quest.dailyNumber>1&&!quest.failed;
+  const classes=(quest.done?' rpg-quest-complete':'')+(waiting?' rpg-quest-waiting':'');
+  const header='<section class="rpg-panel rpg-quest-card'+classes+'">'+questCardHeader(cadence,label,name,quest.done,available);
+  if(quest.done) return header+(waiting?dailyQuestNextPanel(quest):cadence==='monthly'?questMonthlySummary(quest):'')+'</section>';
   const content=quest.failed?'':quest.tasks.map((task,i)=>{
     const gated=task.gate && day<task.gate;
     if(gated) return '<p>'+ (cadence==='weekly'?'⑤ Objectif révélé vendredi à 9 h.':'⑤ Dernier Sceau révélé le 24 à 9 h.') +'</p>';
